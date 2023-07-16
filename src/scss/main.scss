@@ -1,0 +1,41 @@
+@import "./font_base.scss";
+@import "./component/Hero-image-with-bubbles.scss";
+@import "./component/product-item.scss";
+@import "./component/marker-animated.scss";
+@import "./component/menu-drawer.scss";
+@import "./component/mega-menu.scss";
+@import "./component/top-bar-filters.scss";
+@import "./component/cart-drawer.scss";
+@import "./component/feature_chart.scss";
+@import "./component/form-klaviyo-newsletter.scss";
+@import "./pages/pdp.scss";
+
+//base vertically
+@media only screen and (max-width: 699px){
+    .bleed {
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+    .container{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+
+.scrolled{
+        background-color: white;
+}
+
+//commun rouned
+.without-rounded-image{
+    img.rounded{
+        border-radius: 0px;
+    }
+}
+
+.shopify-section--media-with-text{
+    video-media[autoplay], video-media:not([autoplay]) ~ *{
+        pointer-events: initial;
+    }
+}

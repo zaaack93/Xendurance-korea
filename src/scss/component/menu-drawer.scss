@@ -1,0 +1,91 @@
+navigation-drawer{
+    --drawer-body-padding:20px !important;
+    .panel-list__wrapper{
+        .panel__scroller {
+            .separator-content{
+                height: 1px;
+                background-color: #E93B40;
+            }
+            .secondary-items-list{
+                grid-template-columns: repeat(2, 1fr);
+                li a{
+                    font-weight: 600;
+                    font-size: 15px;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                    img:invalid {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .panel-footer{
+        .judge_me_widget_container{
+            background-color: transparent;
+            color: black;
+            .jdgm-all-reviews-text{
+                a{
+                    background: none;
+                    justify-content: center;
+                }
+            }
+            .jdgm-all-reviews-text__text{
+                text-shadow: none;
+                color: black;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                padding: 0px;
+                .rating-text-separator{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                svg{
+                    fill: black;
+                    path,circle{
+                        fill: black;
+                    }
+                }
+            }
+        }
+        .button{
+            font-weight: 700;
+            font-size: 18px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            line-height: 30px;
+        }
+        .panel-footer__account-link{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+        }
+    }
+    .link_item_sublevel{
+        grid-template-columns: repeat(2, 1fr);
+        li:first-child {
+            grid-column: 1 / span 2; /* Remaining items span 2 columns each (50% width) */
+        }
+        li:not(:first-child) {
+            padding-bottom: 20px;
+        }
+        li{
+            .link-title-container{
+                display: block;
+                text-align: center;
+                line-height: 0px;
+                .reversed-link{
+                    display: inline-block;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: black;
+                }
+            }
+        }
+    }
+   
+    }
+}

@@ -1,0 +1,182 @@
+.section--feature-chart-v2 {
+    @media only screen and (min-width: 700px) {
+
+        .section-stack__intro,
+        .section-stack__main {
+            width: 100% !important;
+        }
+    }
+
+    feature-chart-customized {
+        background-color: transparent;
+
+        @media only screen and (min-width: 700px) {
+            padding: 0px;
+        }
+
+
+        .row {
+            overflow: hidden;
+
+            .feature-table {
+                text-align: left;
+
+                @media only screen and (max-width: 699px) {
+                    overflow-x: scroll;
+                    border-radius: 20px;
+                }
+
+                thead {
+                    background-color: #D9D9D9;
+
+                    .feature-row-header {
+                        td {
+                            color: #000;
+                            font-size: 36px;
+                            font-family: Clan Pro;
+                            font-style: italic;
+                            font-weight: 900;
+                            line-height: normal;
+                            letter-spacing: 1.08px;
+                            text-transform: uppercase;
+                            padding: 40px 50px 30px;
+                            text-align: center;
+
+                            @media only screen and (max-width: 699px) {
+                                font-size: 24px;
+                                letter-spacing: 0.72px;
+                            }
+                        }
+
+                        td:first-child {
+                            width: 55%;
+                            text-align: left;
+
+                            @media only screen and (max-width: 699px) {
+                                font-size: 32px;
+                                letter-spacing: 0.96px;
+                                padding: 35px 23px 27px;
+                                position: sticky;
+                                top: 0px;
+                                left: 0px;
+                                background-color: #D9D9D9;
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        position: relative;
+
+                        td {
+                            color: #000;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            padding: 20px;
+                            text-align: center;
+                            border: none;
+                            vertical-align: middle;
+
+                            @media only screen and (max-width: 699px) {
+                                font-size: 15px;
+
+                                svg {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+
+                        td:first-child {
+                            text-align: left;
+
+                            @media only screen and (max-width: 699px) {
+                                position: sticky;
+                                top: 0px;
+                                left: 0px;
+                                background-color: #EAEAEA;
+                            }
+
+                            @media only screen and (min-width: 700px) {
+                                padding-left: 50px;
+                                padding-right: 50px;
+                            }
+                        }
+
+                        td::after {
+                            @media only screen and (min-width: 700px) {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 50px;
+                                width: calc(100% - 100px);
+                                border-bottom: 1px solid black;
+                            }
+                        }
+
+                        @media only screen and (max-width: 699px) {
+                            td:first-child::after {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 20px;
+                                width: calc(100% + 100px);
+                                border-bottom: 1px solid black;
+                                z-index: 99;
+                            }
+                        }
+                    }
+
+                    tr:last-child {
+                        td::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                table {
+                    border-radius: 20px;
+                    background-color: #D9D9D9;
+
+                    @media only screen and (min-width: 700px) {
+                        overflow: hidden;
+                    }
+
+                    width: 100%;
+                    margin: 0 auto;
+
+                    tbody {
+                        background-color: #EAEAEA;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .bullet-pagination {
+        display: flex;
+        margin-top: 29px;
+        justify-content: center;
+        column-gap: 8px;
+
+        li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid#464646;
+            cursor: pointer;
+        }
+
+        li.active-bull {
+            background-color: #464646;
+        }
+
+        @media only screen and (min-width: 700px) {
+            display: none;
+        }
+    }
+}

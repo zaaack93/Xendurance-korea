@@ -1,0 +1,700 @@
+.template--product .shopify-section--main-product,.shopify-section--featured-product {
+    //smartrr product with price add compar price
+    .product-for-member {
+        .product-price_with_rating{
+            span[data-smartrr-compare-price].valid{
+                display: initial !important;
+            }
+            span[data-smartrr-subscribe-price].valid{
+                color: #e93b40;
+            }
+        }
+    }
+    @media only screen and (max-width: 989px) {
+        .section {
+            padding-left: 19px;
+            padding-right: 19px;
+            overflow-x: hidden;
+            .product {
+                row-gap: 19px;
+            }
+        }
+    }
+
+    product-gallery {
+        @media only screen and (min-width: 990px) {
+            position: sticky;
+            top: 109px;
+        }
+
+        .product-card__badge-list {
+            position: absolute;
+            left: 19px;
+            top: 19px;
+
+            .badge {
+                background: #353435;
+                border-radius: 10px;
+                font-family: 'United Sans SemiCond';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 15px;
+                color: white;
+                padding-top: 6px;
+                padding-bottom: 4px;
+                display: flex;
+                align-items: center;
+                padding-left: 14px;
+                padding-right: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.34px;
+            }
+        }
+    }
+
+    // cass for member hide 2 and 3 
+    //i keeep the first one as a nth -child becauseit always the same
+    .product.product-for-member {
+        custom-options {
+            div[data-smartrr-selling-plan-groups] {
+
+                div[data-smartrr-selling-plan-group-id="da1e61c01b6561e74b0298c2b931b5c94d7a4bd3"],
+                div[data-smartrr-selling-plan-group-id="ba11e52e1a6aa078dca92bf274d23a25dce62018"] {
+                    display: none;
+                }
+
+                div[data-smartrr-selling-plan-group-id]:nth-child(1) {
+                    div[data-smartrr-price-style] {
+                        span[data-smartrr-compare-price] {
+                            display: initial !important;
+                            order: 1;
+                        }
+
+                        span[data-smartrr-subscribe-price] {
+                            color: #E93B40;
+                        }
+                    }
+                }     
+                span.price-regular{
+                    color:#353435 !important;
+                }
+                span.price-compare-show{
+                    display: inline-block !important;
+                    order: 1;
+                }
+            }
+        }
+
+        .offer,
+        buy-buttons span[data-smartrr-compare-price] {
+            display: none;
+        }
+    }
+
+    // cass for member hide 1
+    .product:not(.product-for-member) {
+        custom-options {
+            div[data-smartrr-selling-plan-groups] {
+                div[data-smartrr-selling-plan-group-id="6a09e170577cb57e08a9a5e44f9fbf31c342d37e"] {
+                    display: none;
+                }
+
+                div[data-smartrr-selling-plan-group-id]:nth-child(1) {
+                    div[data-smartrr-price-style] {
+                        .data-smartrr-subscribe-price {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .shopify-app-block {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .product.cart-has-membership {
+        custom-options {
+            div[data-smartrr-selling-plan-groups] {
+                div[data-smartrr-selling-plan-group-id="ba11e52e1a6aa078dca92bf274d23a25dce62018"] {
+                    display: none;
+                }
+            }
+        }
+
+        .offer {
+            display: none;
+        }
+    }
+
+    //smartrr options
+    .smartrr-purchase-options {
+        .smartrr-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 12px;
+            @media only screen and (max-width: 989px) {
+                margin-bottom: 9px;
+            }
+        }
+
+        div[data-smartrr-selling-plan-groups] {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            div[data-smartrr-selling-plan-group-id]{
+                margin-bottom: 0px !important;
+            }
+
+            div[data-smartrr-selling-plan-group-id].smartrr-group-active {
+                background: rgba(233, 59, 64, 0.1);
+                border: 1px solid #E93B40;
+                border-radius: 10px;
+                // .smartrr-pills-header{
+                //     color: black !important;
+                // }
+            }
+
+            //Set price color regular price for upper second
+            div[data-smartrr-selling-plan-group-id]:not(:first-child) {
+                div[data-smartrr-price-style] {
+                    span[data-smartrr-subscribe-price] {
+                        color: #E93B40;
+                    }
+                }
+            }
+
+            div[data-smartrr-price-style] {
+                span[data-smartrr-regular-price] {
+                    color: inherit;
+                }
+            }
+
+            //this for label
+            .data-smartrr-subscribe-price {
+                color: #E93B40;
+            }
+
+            div[data-smartrr-selling-plan-group-id] {
+                background-color: white;
+                padding: 16px 18px 16px 14px;
+                border: 1px solid #ADADAD;
+                border-radius: 10px;
+                position: relative;
+                @media only screen and (max-width: 400px) {
+                    padding: 16px 5px 16px 12px;
+                }
+
+                .smartrr-badge-item {
+                    position: absolute;
+                    top: 16px;
+                    right: 19px;
+                    background: #353435;
+                    border-radius: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 3px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 14px;
+                    padding-right: 14px;
+                    font-family: 'United Sans SemiCond';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    @media only screen and (max-width: 989px) {
+                        top: 14px;
+                        right: 16px;
+                    }
+                }
+
+                .badge-for-ordre-once {
+                    background-color: transparent;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #353435;
+                    padding: 0px;
+                    padding-top: 2px;
+                }
+
+                .smartrr-selling-plan-group-header {
+                    .smartrr-selling-plan-group-label {
+                        display: flex;
+                        align-items: start;
+                        column-gap: 16px;
+                        flex-direction: row !important;
+                        @media only screen and (max-width: 989px) {
+                            column-gap: 12px;
+                        }
+                        .smartrr-pills-container{
+                            flex:1;
+                        }
+                        
+                        input[type="radio"] {
+                            display: initial !important;
+                            appearance: none;
+                            background-color: #fff;
+                            margin: 0;
+                            font: inherit;
+                            color: currentColor;
+                            width: 24px;
+                            height: 24px;
+                            border: 2px solid #E93B40;
+                            border-radius: 50%;
+                            flex: 0 0 24px;
+                        }
+
+                        input[type="radio"]:checked {
+                            background: radial-gradient(#E93B40 0%, #E93B40 50%, transparent 60%, transparent);
+                        }
+
+
+                        .smartrr-pills-header {
+                            margin: 0px;
+                            flex: 1;
+                            padding: 0px;
+                            border: none;
+                            background: none;
+                            flex-direction: column;
+                            row-gap: 7px;
+                            color: #353435;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 22px;
+                            @media only screen and (max-width: 989px) {
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+
+                            .smartrr-pricing-dash {
+                                display: none;
+                            }
+
+                            div[data-smartrr-price-style] {
+                                display: flex;
+                                column-gap: 12px;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 22px;
+                                flex-direction: row-reverse;
+                                justify-content: flex-end;
+                                flex-wrap: wrap;
+                                @media only screen and (max-width: 989px) {
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    column-gap: 10px;
+                                }
+
+                                span[data-smartrr-subscribe-price],
+                                .data-smartrr-subscribe-price {
+                                    //color: #E93B40 ;
+                                }
+
+                                .data-smartrr-subscribe-price {
+                                    margin-left: -5px;
+                                    @media only screen and (max-width: 699px) {
+                                        margin-left: -5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div[data-smartrr-selling-plan-group-contents] {
+                    margin: 0px !important;
+                    div[data-smartrr-selling-plan-group-plans] {
+                        margin-top: 14px;
+                        padding-top: 16px;
+                        padding-left: 13px;
+                        padding-right: 13px;
+                        padding-bottom: 10px;
+                        border-top: 1px solid #ADADAD;
+                        @media only screen and (max-width: 989px) {
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        }
+
+                        .smartrr-pills-header {
+                            margin: 0px;
+                        }
+                    }
+                }
+
+                div[data-smartrr-selling-plans-select] {
+                    background: transparent;
+                    color: inherit;
+                    padding: 0px;
+                    border: none !important;
+
+                    .content_inner {
+                        white-space: initial;
+                        .label_content {
+                            font-size: 16px;
+                            line-height: 19px;
+                            margin-bottom: 11px;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 12px;
+
+                            li {
+                                display: block;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 18px;
+                                background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260');
+                                background-size: 17px;
+                                /* Adjust to match the size of your SVG icon */
+                                background-position: left center;
+                                /* Adjust the position as needed */
+                                padding-left: 30px;
+                                background-repeat: no-repeat;
+                                @media only screen and (max-width: 989px) {
+                                    font-size: 15px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //product info 
+    .product-info {
+        .product-info__title {
+            font-family: 'Clan Pro';
+            // font-style: italic;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 61px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #000000;
+            @media only screen and (max-width: 989px) {
+                font-size: 34px;
+                line-height: 43px;
+            }
+        }
+
+        //product price with rating
+        .product-price_with_rating {
+            margin-top: 13px;
+            margin-bottom: 21px;
+            @media only screen and (max-width: 989px) {
+                margin-bottom: 19px;
+            }
+            display: flex;
+            justify-content: space-between;
+
+            div[data-smartrr-product-id] {
+                display: inherit;
+                column-gap: 10px;
+
+                span {
+                    font-family: 'United Sans SemiCond';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                span[data-smartrr-compare-price]:not(.smartrr-widget-hide) ~ span[data-smartrr-subscribe-price] {
+                    color: #E93B40;
+                }
+                
+                // span[data-smartrr-compare-price]{
+                //     color: #E93B40;
+                // }
+                
+            }
+
+            .jdgm-prev-badge {
+                display: flex !important;
+                column-gap: 11px;
+            }
+        }
+
+        //product ttext
+        .product-info__text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            margin: 0px;
+
+            .metafield-rich_text_field {
+                margin-top: 20px !important;
+
+                ul {
+                    margin-top: 17px;
+
+                    li {
+                        display: block;
+                        line-height: 18px;
+                        background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Group_4958.png?v=1685801260');
+                        background-size: 17px;
+                        /* Adjust to match the size of your SVG icon */
+                        background-position: left center;
+                        /* Adjust the position as needed */
+                        padding-left: 27px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+
+        //quantty selector with buy button
+        .buy_button_container {
+            display: flex;
+            column-gap: 22px;
+            margin-bottom: 0px;
+            @media only screen and (max-width: 989px) {
+                column-gap: 8px;
+            }
+
+            .product-info__quantity-selector {
+                flex: 0 0 142px;
+                @media only screen and (max-width: 989px) {
+                    flex: 0 0 83px;
+                }
+            }
+
+            .product-info__buy-buttons {
+                --input-height: 57px;
+                flex: 1;
+
+                buy-buttons {
+                    button {
+                        font-family: 'United Sans SemiCond';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 24px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.02em;
+                        padding-top: 14px;
+                        padding-bottom: 10px;
+                        height: 57px;
+                        @media only screen and (max-width: 989px) {
+                            font-size: 20px;
+                            line-height: 20px;
+                        }
+                        span[data-smartrr-compare-price]{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .quantity-selector {
+                background-color: white;
+                border-color: #ADADAD;
+                height: 57px !important;
+                width: 100%;
+                justify-content: space-around;
+
+                .quantity-selector__button {
+                    padding-inline-start: 14px;
+                    padding-inline-end: 14px;
+                    @media only screen and (max-width: 989px) {
+                        padding-inline-start: 10px;
+                        padding-inline-end: 10px;
+                    }
+
+                    svg {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+
+                .quantity-selector__input {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    @media only screen and (max-width: 989px) {
+                        min-width: initial;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product__icon__row {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        .product__icon__container:nth-child(1) {
+            column-gap: 8px;
+            @media only screen and (max-width: 989px) {
+                column-gap: 4px;
+            }
+        }
+
+        .product__icon__container:nth-child(2) {
+            column-gap: 16px;
+            @media only screen and (max-width: 989px) {
+                column-gap: 7px;
+            }
+        }
+
+        .product__icon__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 50%;
+            max-width: 50%;
+            @media only screen and (max-width: 989px) {
+                img{
+                    max-width: 25px;
+                }
+            }
+
+            .product__icon__text {
+                p {
+                    margin: 0px;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    @media only screen and (max-width: 989px) {
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    //product to offer
+    .product-offer-main {
+        //margin-top: 45px;
+        margin-bottom: 40px;
+        @media only screen and (max-width: 989px) {
+            margin-bottom: 20px;
+        }
+
+        .offer {
+            padding-top: 20px;
+            padding-bottom: 27px;
+            padding-left: 17px;
+            padding-right: 17px;
+            row-gap: 0px;
+
+            .text-with-icon {
+                padding-left: 10px;
+                padding-right: 10px;
+                column-gap: 27px;
+                @media only screen and (max-width: 989px) {
+                    padding: 0px;
+                    column-gap: 25px;
+                }
+
+                img {
+                    border-radius: 10px;
+                }
+
+                span {
+                    font-family: 'United Sans SemiCond';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 31.2684px;
+                    line-height: 31px;
+                    @media only screen and (max-width: 989px) {
+                        font-size: 28px;
+                        line-height: 28px;
+                    }
+                }
+            }
+
+            .prose {
+                margin-top: 19px;
+                padding-top: 17px;
+                border-top: 1px solid #ADADAD;
+                padding-left: 10px;
+                padding-right: 10px;
+                @media only screen and (max-width: 989px) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                ul {
+                    margin-top: 13px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    padding-left: 13px;
+                    padding-right: 13px;
+                    row-gap: 5px;
+                    @media only screen and (max-width: 989px) {
+                        margin-top: 9px;
+                        font-size: 14.5px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+
+                    li {
+                        background-image: url('https://cdn.shopify.com/s/files/1/0574/3450/5404/files/Component_1.svg?v=1686080576');
+                        background-size: 17px;
+                        /* Adjust to match the size of your SVG icon */
+                        background-position: left center;
+                        /* Adjust the position as needed */
+                        padding-left: 30px;
+                        background-repeat: no-repeat;
+                        list-style: none;
+                    }
+                }
+            }
+
+            .product-info__buy-buttons {
+                margin-top: 18px;
+                button {
+                    font-family: 'United Sans SemiCond';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    padding-top: 18px;
+                    padding-bottom: 16px;
+                    @media only screen and (max-width: 989px) {
+                        padding-top: 15px;
+                        padding-bottom: 13px;
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .accordion__content{
+        .prose * + span:not(:empty){
+            display: inline;
+        }
+    }
+}
