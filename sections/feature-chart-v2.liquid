@@ -1,0 +1,311 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign text_position = section.settings.text_position -%}
+{%- assign values_column_count = section.blocks | where: 'type', 'values' | size -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --feature-chart-values-columns-count: {{ values_column_count }};
+  }
+
+  @media screen and (min-width: 700px) {
+    {%- if text_position == 'center' -%}
+      #shopify-section-{{ section.id }} .section-stack__main {
+        width: {% if values_column_count == 1 %}680px{% elsif values_column_count == 2 %}900px{% else %}auto{% endif %};
+        min-width: 680px;
+      }
+    {%- else -%}
+      #shopify-section-{{ section.id }} .section-stack {
+        flex-wrap: wrap;
+        justify-content: start;
+      }
+
+      #shopify-section-{{ section.id }} .section-stack__intro {
+        flex: 1 0 350px; /* Allow to grow and shrink with a range from 350px to 750px */
+        max-width: 750px;
+        width: auto;
+      }
+
+      #shopify-section-{{ section.id }} .section-stack__main {
+        flex: 1 1 {% if values_column_count == 1 %}600px{% elsif values_column_count == 2 %}900px{% else %}auto{% endif %};
+        min-width: 450px;
+        width: auto;
+      }
+    {%- endif -%}
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID 
+the first check which help to render the section if the line is not empty
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+{% for block in section.blocks %}
+  {% if block.type != "headings" and block.settings.value != blank %}
+    {%assign isRetrieve =true%}
+  {%endif%}
+{%endfor%}
+{% if isRetrieve%}
+<div {% render 'section-properties' %}>
+  <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
+    {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank or section.settings.button_text != blank -%}
+      <div class="section-stack__intro">
+        <div class="prose {% if text_position == 'center' %}text-center{% endif %}">
+          {%- if section.settings.subheading != blank -%}
+            <p class="bold">{{ section.settings.subheading | escape }}</p>
+          {%- endif -%}
+
+          {%- if section.settings.title != blank -%}
+            <h2 class="h2">
+              {%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
+            </h2>
+          {%- endif -%}
+
+          {{- section.settings.content -}}
+
+          {%- if section.settings.button_text != blank -%}
+            {% include 'membership-check' %}
+            {% if isMember %}
+              {%- assign button_link = section.settings.button_url_members -%}
+            {%else%}
+              {%- assign button_link = section.settings.button_url -%}
+            {%endif%}
+            {%- render 'button', size: 'lg', href: button_link, content: section.settings.button_text, background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    <div class="section-stack__main">
+      {%- assign text_color = section.settings.chart_text_color | default: settings.text_color -%}
+      {%- assign background_color = section.settings.chart_background -%}
+
+      {%- if background_color == blank or background_color == 'rgba(0,0,0,0)' -%}
+        {%- assign background_color = settings.background | color_mix: text_color, 95 -%}
+      {%- endif -%}
+      <feature-chart-customized {% render 'surface', class: 'feature-chart', background: background_color, text_color: text_color %}>
+        <div class="row">
+          <div class="feature-table">
+            <table>
+              <thead>
+              <tr class="feature-row-header"> 
+                {% for block in section.blocks %}
+                  {% if block.type == "headings" %}
+                    {% for i in (0..3) %}
+                      {% assign heading_value = 'heading_' | append : i%}
+                      {%if block.settings[heading_value] != blank %}
+                        <td >{{block.settings[heading_value]}}</td>
+                      {%endif%}
+                    {% endfor %}
+                  {%endif%}
+                {%endfor%}
+              </tr>
+              </thead>
+              <tbody>
+                {% for block in section.blocks %}
+                  {% if block.type != "headings" and block.settings.value != blank %}
+                    <tr>
+                      <td>
+                        <span class="feature-label">
+                           {{ block.settings.value }}
+                        </span>
+                      </td>
+                      <td><span class="check-mark"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="10" fill="#E93B40"/>
+                        <path d="M26.6093 12.3526L30.1949 16.1555L16.974 30.1957L9.80273 22.5809L13.3884 18.7779L16.974 22.5809L26.6093 12.3526ZM26.6093 14.8759L16.974 25.1131L13.3884 21.3553L12.1903 22.5809L16.974 27.6454L27.8073 16.1555L26.6093 14.8759Z" fill="white"/>
+                        <rect x="14.2578" y="19.9993" width="7.64706" height="3.50228" transform="rotate(48.0518 14.2578 19.9993)" fill="white"/>
+                        <rect x="28.5527" y="16.553" width="13.554" height="3.50228" transform="rotate(133.825 28.5527 16.553)" fill="white"/>
+                        </svg>
+                        </span></td>
+                      <td><span class="x-mark"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="10" fill="#353435"/>
+                        <path d="M27.0141 29.3534L27.3688 29.7084L27.7225 29.3524L29.3547 27.7097L29.7061 27.3561L29.3534 27.0037L22.3453 20L29.3534 12.9963L29.7073 12.6427L29.3534 12.289L27.7213 10.6579L27.3678 10.3047L27.0144 10.6579L20.0061 17.6617L12.9974 10.6466L12.644 10.2928L12.2903 10.6463L10.6466 12.289L10.2924 12.643L10.6468 12.9966L17.6657 20L10.6468 27.0034L10.2924 27.357L10.6466 27.711L12.2903 29.3537L12.644 29.7072L12.9974 29.3534L20.0058 22.3385L27.0141 29.3534Z" fill="white" stroke="white"/>
+                        </svg>
+                        </span></td>
+                    </tr>
+                  {%endif%}
+                {%endfor%}
+              </tbody>         
+              </table>
+            </div>
+
+          <ul class="bullet-pagination">
+          <li></li>
+          <li></li>
+          </ul>
+            
+          </div>
+     </feature-chart-customized>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+{%endif%}
+
+{% schema %}
+{
+  "name": "Compar chart",
+  "class": "shopify-section--feature-chart section--feature-chart-v2",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Compare"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Product specification"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Give your customers useful information about your products and showcase differences between them.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "url",
+      "id": "button_url_members",
+      "label": "Button URL for members"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Headings column",
+      "type": "headings",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "A heading without values is hidden automatically."
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Heading 1"
+        },
+        {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Heading 2"
+        },
+        {
+          "type": "text",
+          "id": "heading_3",
+          "label": "Heading 3"
+        }
+      ]
+    },
+    {
+      "name": "Values column",
+      "type": "values",
+      "limit": 20,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "value",
+          "label": "Value"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Compar chart",
+      "blocks": [
+      ]
+    }
+  ]
+}
+{% endschema %}

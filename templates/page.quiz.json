@@ -1,0 +1,169 @@
+{
+  "sections": {
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Quiz.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Find the right product for you",
+            "title": "Take Our Quiz",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 19,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0",
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "md",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66": {
+      "type": "media-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "d41805e4-88a8-4422-84ad-6dcff36e24d7": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--16058299547836__d41805e4-88a8-4422-84ad-6dcff36e24d7-168810260396eb2902-0": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--16058299547836__d41805e4-88a8-4422-84ad-6dcff36e24d7-168810260396eb2902-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Learn about California’s Proposition 65",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16058299547836__d41805e4-88a8-4422-84ad-6dcff36e24d7-168810260396eb2902-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>What is California’s Proposition 65?<\/strong><\/p><p>California’s Safe Drinking Water and Toxic Enforcement Act of 1986, also known as Proposition 65, is a law that applies only in the State of California. Proposition 65 mandates the publication of a list of chemicals that the State of California determines causes cancer or birth defects, and requires companies that sell products that contain those chemicals to inform California residents about the risk of exposure to such chemicals by including a warning notice on the product label. Warning notices for Proposition 65 can be found in hotels, grocery stores, bars, hospitals and many other public settings throughout California. The two Proposition 65 lists have continuously expanded to include more than 800 chemicals. Even if a chemical has not been shown to cause cancer or birth defects in humans, but has been shown to do so in animal testing, the chemical is still required to be placed on the applicable Proposition 65 list.<br\/><br\/><strong>What Chemicals Are on the Proposition 65 Lists?<\/strong><\/p><p>There are two lists that outline the range of naturally occurring and man made chemicals in Proposition 65. The noted chemicals not only include ingredients found in pesticides, insecticides, and construction materials, but also may also contain ingredients in common household products like foods, alcoholic beverages, and nutritional supplements. Some chemicals such as lead, cadmium, and arsenic can be found naturally in the environment all over the world and they are on the Proposition 65 list. Because of this, some products can be required to carry a Proposition 65 warning notice on their product label, such as mineral and botanical ingredients that are included in nutritional supplements. It is important to note that as plants grow, they absorb nutrients from the soil and water and this may include tract amounts of some naturally occurring heavy metals.<br\/><br\/><strong>What Determines A Proposition 65 Warning?<\/strong><\/p><p>Companies are required to put the Proposition 65 warning on their products if there is any ingredient that tests over 1\/1000th of what the World Health Organization (WHO) determines as “Safe Harbor Levels” of the list of chemicals, which includes several naturally occurring minerals. Proposition 65 was created by California law and specifies that companies must follow this law if selling products in California. There is no other state in the US that enforces Proposition 65 law except the state of California.<br\/><br\/><strong>Are Products With The Proposition 65 Warning Safe?<\/strong><\/p><p>When a products show a Proposition 65 warning on their packing slip, product page or a product label, it does not mean the product is unsafe. The warning notice is included to inform California consumers of the presence of a Proposition 65 listed chemical so the consumer can make an informed decision when purchasing the product.<br\/><br\/><strong>What Is Xendurance Doing Regarding Proposition 65?<\/strong><\/p><p>Xendurance tests every raw ingredient and every finished good for identity and purity in each formula. Every incoming raw ingredient in a product is quarantined until it is tested and its identity and purity is confirmed. As part of the purity testing, raw materials are tested for the suspected presence of chemicals listed by California’s Proposition 65. If an Xendurance product contains a naturally occurring chemical in an amount that is above a Proposition 65 threshold, then we will place the appropriate warning notice on the product label, product page or on the packing slip for California consumers.<br\/><br\/>For information about Proposition 65 go to https:\/\/oag.ca.gov\/prop65<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16058299547836__d41805e4-88a8-4422-84ad-6dcff36e24d7-168810260396eb2902-0",
+        "template--16058299547836__d41805e4-88a8-4422-84ad-6dcff36e24d7-168810260396eb2902-1",
+        "template--16058299547836__d41805e4-88a8-4422-84ad-6dcff36e24d7-168810260396eb2902-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "d5496c45-bdc3-4e58-8c51-8a392c982504": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"octane-ai-quiz \" data-quiz-id=\"OEabhvhRF7QcjUNz\" data-embed-type=\"fullpage\" data-mobile-height=\"match_browser\" data-desktop-height=\"match_browser\"><\/div><script src=\"https:\/\/app.octaneai.com\/f9ksuh00sqh7x9vc\/quiz.js\" async=\"\" defer><\/script>",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0",
+    "main",
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66",
+    "d41805e4-88a8-4422-84ad-6dcff36e24d7",
+    "d5496c45-bdc3-4e58-8c51-8a392c982504"
+  ]
+}

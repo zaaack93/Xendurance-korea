@@ -1,0 +1,684 @@
+{
+  "sections": {
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_Desktop_7.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "With Team XND",
+            "title": "Share, Grow & Earn.",
+            "heading_tag": "h1",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "md",
+        "controls_type": "none",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "4872f2ee-ee86-402b-a966-8c23b0f7ae3c": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-0": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Earning with Team XND",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>With Xendurance you have the power to create a business where your success depends entirely on you. You are the boss. You work on your own time — as much or as little as you want — and you make money by sharing what you love. You’re in charge, but you’re not alone. You’ll have access to a supportive network that provides tools, training, and expertise so you can succeed.<\/p><p>As you grow your own team you will unlock leader bonuses, team payouts and more!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-0",
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-1",
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "4125307b-5d63-44bc-9967-beea68306462": {
+      "type": "text-with-icons",
+      "disabled": true,
+      "blocks": {
+        "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 48,
+            "icon_width": 48,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Entire Site Discount",
+            "content": "<p>25% off all products, apparel and accessories – at all times!<\/p>"
+          }
+        },
+        "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 48,
+            "icon_width": 48,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free Domestic Shipping",
+            "content": "<p>Receive free shipping anywhere in the US and Military APOs. $15 flat rate for Team XND Canada.<\/p>"
+          }
+        },
+        "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 48,
+            "icon_width": 48,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Partner Perks",
+            "content": "<p>50+ best in class partners who have offered exclusive discounts and offerings.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-0",
+        "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-1",
+        "template--16054074540220__4125307b-5d63-44bc-9967-beea68306462-168749267948764342-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "f57eebd0-c58b-4626-8aa5-bf70bd97495e": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16054537683132__f57eebd0-c58b-4626-8aa5-bf70bd97495e-1687869092ab4b6597-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9_89e0ddb0-ea50-4f69-b214-5eb9677c17e7.jpg",
+            "column_size": "2",
+            "title": "10 Ways to Earn",
+            "heading_tag": "h4",
+            "content": "<p>25% Commissions on each retail referral, $100 Phone Stipend as you advance and weekly bonuses on our Motion Boxes & Packs!<\/p>",
+            "link_url": "shopify:\/\/pages\/team-xnd-signup",
+            "link_url_members": "shopify:\/\/pages\/team-xnd-signup",
+            "link_text": "Learn About Team XND",
+            "link_style": "button"
+          }
+        },
+        "template--16054537683132__f57eebd0-c58b-4626-8aa5-bf70bd97495e-1687869092ab4b6597-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Victory_Trip.jpg",
+            "column_size": "2",
+            "title": "Victory Trip",
+            "heading_tag": "h4",
+            "content": "<p>By referring and helping others you can earn our next incentive trip. Check out how you can earn and past trip experiences below.<\/p>",
+            "link_url": "shopify:\/\/pages\/victory-trip",
+            "link_url_members": "shopify:\/\/pages\/victory-trip",
+            "link_text": "Learn About Victory Trip",
+            "link_style": "button"
+          }
+        },
+        "template--16054537683132__f57eebd0-c58b-4626-8aa5-bf70bd97495e-1687869092ab4b6597-2": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16054537683132__f57eebd0-c58b-4626-8aa5-bf70bd97495e-1687869092ab4b6597-0",
+        "template--16054537683132__f57eebd0-c58b-4626-8aa5-bf70bd97495e-1687869092ab4b6597-1",
+        "template--16054537683132__f57eebd0-c58b-4626-8aa5-bf70bd97495e-1687869092ab4b6597-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Earning with Team XND",
+        "content": "<p>With Xendurance you have the power to create a business where your success depends entirely on you. You are the boss. You work on your own time — as much or as little as you want — and you make money by sharing what you love. You’re in charge, but you’re not alone. You’ll have access to a supportive network that provides tools, training, and expertise so you can succeed.<\/p><p>As you grow your own team you will unlock leader bonuses, team payouts and more!<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66": {
+      "type": "media-with-text",
+      "disabled": true,
+      "blocks": {
+        "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 96,
+            "subheading": "",
+            "title": "10 Ways to Earn",
+            "content": "<p>25% Commissions on each retail referral, $100 Phone Stipend as you advance and weekly bonuses on our Motion Boxes & Packs!<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EE_Challenge_a345452b-200b-4106-9be9-76ef6f21dc96.jpg",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Victory Trip",
+            "content": "<p>By referring and helping others you can earn our next incentive trip. Check out how you can earn and past trip experiences <a href=\"https:\/\/xendurance.com\/pages\/victory-trip\">here<\/a>.<\/p>",
+            "link_text": "",
+            "link_url": "https:\/\/chrome-extension\/\/efaidnbmnnnibpcajpcglclefindmkaj\/https:\/\/cdn.shopify.com\/s\/files\/1\/0574\/3450\/5404\/files\/EE_Challenge-Workouts-2.pdf?v=1643835918",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "2c0e237f-c1cc-4eb8-b43b-addc715943d2",
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "1782d0d6-94da-454f-a381-d65a9e20ce78": {
+      "type": "media-with-text",
+      "blocks": {
+        "a9cfd66d-f1dc-49da-be4c-ed08c28022e6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/See_the_savings_1.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "See the Savings",
+            "title": "With Team XND",
+            "content": "<p>Think Amazon Prime but with big savings on Xendurance products + Membership Perks ($95 per year).<\/p><ul><li>25% off all products and apparel.<\/li><li>Free shipping on every order in the United States & military addresses.<\/li><li>Discounts on your favorite brands.<\/li><li>50+ custom Team XND specific codes.<\/li><li>Earn free credit to be used on products & apparel via Bonus Bux.<\/li><li>Earn $100 worth of product or apparel by completing 3 rounds of XND In Motion.<\/li><li>Unlock a virtual Xendurance Visa® debit card Get paid Weekly & Monthly!<\/li><\/ul>",
+            "link_text": "Join Team XND",
+            "link_url": "shopify:\/\/pages\/team-xnd-signup",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "a9cfd66d-f1dc-49da-be4c-ed08c28022e6"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "1284832e-4ff2-46b3-8365-2765229b44f4": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "EARN WITH XND.",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
+    "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
+            "column_size": "3",
+            "title": "Josh Bridges",
+            "heading_tag": "h4",
+            "content": "<p><em>Former Navy Seal and 6x CrossFit Games Athlete<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.png",
+            "column_size": "3",
+            "title": "Ivet Dahl",
+            "heading_tag": "h4",
+            "content": "<p><em>Coach\/Athlete\/Mum<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_86e31f62-e2ea-4840-aac3-8e787f5fe2e4.png",
+            "column_size": "3",
+            "title": "Hayley Manners",
+            "heading_tag": "h4",
+            "content": "<p><em>College Athlete<\/em><\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0",
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1",
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "See Who Else Is Earning With Team XND",
+        "content": "<p>Our products are used by world-class performers like Josh Bridges to help their chances to get on top of the podium.<\/p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "aa48095d-cf33-4d75-8a96-cf91e6c7f352": {
+      "type": "text-with-icons",
+      "disabled": true,
+      "blocks": {
+        "62ca70ef-bd00-4813-861f-152b1b342453": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/1-1643686487072.png",
+            "mobile_icon_width": 80,
+            "icon_width": 100,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p>Trusted by world-class athletes since 2008<\/p>"
+          }
+        },
+        "57c2e7c1-02e0-4854-ac88-117a067f5683": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/2-1643686487074_Large_6871f92a-e3fd-4d14-acfc-7e8942840bca.png",
+            "mobile_icon_width": 80,
+            "icon_width": 100,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p>Certified by Informed-Choice & Informed-Sport**<\/p>"
+          }
+        },
+        "ad36cc39-c149-41ec-aba1-469cea7ef733": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/3-1643686487076_Large_445ce96f-663a-466c-90ea-35bd35ae836c.png",
+            "mobile_icon_width": 80,
+            "icon_width": 100,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p>Supported by rigorous scientific research<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "62ca70ef-bd00-4813-861f-152b1b342453",
+        "57c2e7c1-02e0-4854-ac88-117a067f5683",
+        "ad36cc39-c149-41ec-aba1-469cea7ef733"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "Meet Extreme Endurance",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "0d8800aa-9c42-40d6-b630-28e4885a4d3f": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "text": "Why You Should Become a Team XND Member",
+        "text_size": "medium",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#e93b40",
+        "text_gradient": ""
+      }
+    },
+    "a10c45f3-8f5b-4be8-93cb-3b25f23f8f59": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/classpass.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/rp.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/thrive_market.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vitamix.png",
+            "logo_width": 100,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/mightymacros.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "17da93ec-ffd0-446a-8d75-3d37bfcc5a55": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/performa_sleep.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "fd90e55d-09ed-4986-866f-9a99d275e762": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/gravity.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "1d988a68-2081-4b01-b5cb-ec9c37a8c5dc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hyperice.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "e03f404c-72da-4043-8f7f-6f9139f3582c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/blenders.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "292ba46d-8e1d-4b93-8ab7-5f3da656e52e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/powerdot.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "d78a43ef-e267-465f-a1eb-b6f6c7612317": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/whoop.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        },
+        "d8de0672-111f-40f9-b8eb-911a666a10a4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/atoms.png",
+            "logo_width": 120,
+            "link": "",
+            "link_members": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-0",
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-2",
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-1",
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-3",
+        "template--16054074540220__a10c45f3-8f5b-4be8-93cb-3b25f23f8f59-1687494929b4c993ce-4",
+        "17da93ec-ffd0-446a-8d75-3d37bfcc5a55",
+        "fd90e55d-09ed-4986-866f-9a99d275e762",
+        "1d988a68-2081-4b01-b5cb-ec9c37a8c5dc",
+        "e03f404c-72da-4043-8f7f-6f9139f3582c",
+        "292ba46d-8e1d-4b93-8ab7-5f3da656e52e",
+        "d78a43ef-e267-465f-a1eb-b6f6c7612317",
+        "d8de0672-111f-40f9-b8eb-911a666a10a4"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "Team XND Partners",
+        "content": "<p>50+ best in class partners who have offered exclusive discounts and offerings to Team XND members that are found in your private customer portal!<\/p>",
+        "text_alignment": "start",
+        "items_per_row": 5,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "6ae6922e-7b13-4fd4-8a1f-5a684c04e323": {
+      "type": "accordion-content",
+      "disabled": true,
+      "blocks": {
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-0": {
+          "type": "item",
+          "settings": {
+            "title": "What happens if I change my mind?",
+            "content": "<p>Placeholder text. <\/p>"
+          }
+        },
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1": {
+          "type": "item",
+          "settings": {
+            "title": "Does the discount work on every product?",
+            "content": "<p>Placeholder Text.<\/p>"
+          }
+        },
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2": {
+          "type": "item",
+          "settings": {
+            "title": "What if I haven't used XND before?",
+            "content": "<p>Placeholder text. <\/p>"
+          }
+        },
+        "795cb8e4-7e18-40df-83ca-31944929a21f": {
+          "type": "item",
+          "settings": {
+            "title": "What if i'm based outside of the USA?",
+            "content": "<p>Placeholder text.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-0",
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1",
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2",
+        "795cb8e4-7e18-40df-83ca-31944929a21f"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Still not sure?",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "#e93b40",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": "#050505"
+      }
+    }
+  },
+  "order": [
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0",
+    "4872f2ee-ee86-402b-a966-8c23b0f7ae3c",
+    "main",
+    "4125307b-5d63-44bc-9967-beea68306462",
+    "f57eebd0-c58b-4626-8aa5-bf70bd97495e",
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66",
+    "1782d0d6-94da-454f-a381-d65a9e20ce78",
+    "1284832e-4ff2-46b3-8365-2765229b44f4",
+    "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac",
+    "aa48095d-cf33-4d75-8a96-cf91e6c7f352",
+    "0d8800aa-9c42-40d6-b630-28e4885a4d3f",
+    "a10c45f3-8f5b-4be8-93cb-3b25f23f8f59",
+    "6ae6922e-7b13-4fd4-8a1f-5a684c04e323"
+  ]
+}

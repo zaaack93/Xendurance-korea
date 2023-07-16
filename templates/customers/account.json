@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-account",
+      "disabled": true,
+      "blocks": {
+        "orders": {
+          "type": "orders",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "orders"
+      ],
+      "settings": {
+      }
+    },
+    "b35a955c-b5ab-43d4-b601-cac0a433fdf4": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<!-- BEGIN SMARTRR SNIPPET -->{% render 'smartrr-account' %}<!-- END SMARTRR SNIPPET -->",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b35a955c-b5ab-43d4-b601-cac0a433fdf4"
+  ]
+}

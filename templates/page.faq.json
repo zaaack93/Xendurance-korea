@@ -1,0 +1,499 @@
+{
+  "sections": {
+    "b3543429-1b58-4fbc-8b00-b6770b20b5fd": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540595388__b3543429-1b58-4fbc-8b00-b6770b20b5fd-16873227670826701c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Collagen.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "FAQ",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__b3543429-1b58-4fbc-8b00-b6770b20b5fd-16873227670826701c-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "md",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "be50793b-f8d4-4246-9c53-f7d93753bb8c": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-1": {
+          "type": "item",
+          "settings": {
+            "title": "What is Xendurance and its mission?",
+            "content": "<p><strong>Xendurance <\/strong>was founded in 1998 with the ambitious goal of transforming the sports nutrition and wellness landscape. Armed with decades of experience, both as athletes and health and wellness professionals, the founders focus on three traits to execute the Xendurance vision for both the athlete and active person of any age.<br\/><br\/>Xendurance has also added <strong>dermatologist formulated skincare <\/strong>that has been tested and proven that when used as a skin care regimen is beneficial to improve the health of your skin.<br\/>What you put on your skin is as important as what you put in your body.<\/p>"
+          }
+        },
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-2": {
+          "type": "item",
+          "settings": {
+            "title": "How long has Xendurance been in business?",
+            "content": "<p>Going strong since 1998!<\/p>"
+          }
+        },
+        "93b9e4fb-6fce-4cd6-888e-86f15fc9a7ee": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "What sets Xendurance apart from other supplement brands?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "4c9819f1-8eb5-405c-9abc-6ff4fc054ef0": {
+          "type": "item",
+          "settings": {
+            "title": "Are Xendurance products tested for quality and safety?",
+            "content": "<p>Yes. Xendurance products are tested by Informed Sport to guarantee that all products are free of banned substances. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-1",
+        "template--16030540595388__be50793b-f8d4-4246-9c53-f7d93753bb8c-1687845164ed36f9e6-2",
+        "93b9e4fb-6fce-4cd6-888e-86f15fc9a7ee",
+        "4c9819f1-8eb5-405c-9abc-6ff4fc054ef0"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Brand",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "6bc2d039-d8a2-40d1-90b6-75ff9d8e955b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-0": {
+          "type": "item",
+          "settings": {
+            "title": "What types of supplements does Xendurance offer?",
+            "content": "<p>Xendurance offers a full line of active wellness & sports nutrition products designed for competing athletes and those who want to age gracefully.<br\/><br\/>Xendurance also recently released a line of the first informed sport certified skincare products.<\/p>"
+          }
+        },
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-1": {
+          "type": "item",
+          "settings": {
+            "title": "How do I determine which Xendurance product is right for me?",
+            "content": "<p>We have a great 60 second quiz to help match your goals with certain products. If you have additional questions please reach out to info@xendurance.com - we love helping!<\/p>"
+          }
+        },
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-2": {
+          "type": "item",
+          "settings": {
+            "title": "Are Xendurance products safe for professional and collegiate athletes?",
+            "content": "<p>Yes. Xendurance products are certified free of banned substances. <\/p>"
+          }
+        },
+        "2c7c7830-29f7-4dec-920d-bce0eb2635e3": {
+          "type": "item",
+          "settings": {
+            "title": "Are Xendurance products suitable for vegans or individuals with dietary restrictions?",
+            "content": "<p>All products are gluten free and please look at each specific product to see if it meets vegan guidelines.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-0",
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-1",
+        "template--16030540595388__6bc2d039-d8a2-40d1-90b6-75ff9d8e955b-168732212695a241e5-2",
+        "2c7c7830-29f7-4dec-920d-bce0eb2635e3"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Products",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "278214ed-c4eb-4c9b-8a99-671bd27887f2": {
+      "type": "accordion-content",
+      "blocks": {
+        "58a84670-1786-41e3-969e-4f18c57ef6c4": {
+          "type": "item",
+          "settings": {
+            "title": "What ingredients are used in Xendurance supplements?",
+            "content": "<p>We only use the most bioavailable, clinically researched (usually pharamaceutical grade) ingredients in all of our products.<\/p>"
+          }
+        },
+        "f9dfd31b-0581-467e-8295-02cf5576561c": {
+          "type": "item",
+          "settings": {
+            "title": "Are Xendurance products free from artificial additives or fillers?",
+            "content": "<p>Yes. No additivies or fillers are ever used.<\/p>"
+          }
+        },
+        "6a89a497-9dd0-4a57-bcc2-9201bde2328a": {
+          "type": "item",
+          "settings": {
+            "title": "Can I combine different Xendurance products together?",
+            "content": "<p>Yes. All products are formulated to be able to be combined together. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "58a84670-1786-41e3-969e-4f18c57ef6c4",
+        "f9dfd31b-0581-467e-8295-02cf5576561c",
+        "6a89a497-9dd0-4a57-bcc2-9201bde2328a"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Ingredients",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "fd599574-3b6b-4017-bb33-676ce1e440c0": {
+      "type": "accordion-content",
+      "blocks": {
+        "48829eff-d23e-4346-9632-ff6463cf0623": {
+          "type": "item",
+          "settings": {
+            "title": "How do I properly use Xendurance supplements?",
+            "content": "<p>Please refer to the recommended dosage section on our product pages and the back of each pouch.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "48829eff-d23e-4346-9632-ff6463cf0623"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Usage & Dosage",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "7f6a1770-498a-4c6b-8afd-1369e19a6e65": {
+      "type": "accordion-content",
+      "blocks": {
+        "84b6a815-d48d-4694-a418-c29d1cf91dc4": {
+          "type": "item",
+          "settings": {
+            "title": "Where does Xendurance ship its products?",
+            "content": "<p>Xendurance ships internationally but does avoid shipping to some countries who have difficult customs process. If you have a question if we ship to your country please ask us at info@xendurance.com<\/p>"
+          }
+        },
+        "773a43c8-71f5-43cc-9049-6bda4171ce0b": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes we do! Xendurance products are used all over the world :)<\/p>"
+          }
+        },
+        "504aca52-673a-4d50-a993-78a709a11840": {
+          "type": "item",
+          "settings": {
+            "title": "How long does it take for Xendurance products to be delivered?",
+            "content": "<p>We pride ourselves on have a same day (read 24 hour business day) handling process. If you place an order we will ship it out within a day and it can take anywhere from 1-5 days to arrive. 90% of our shipments arrive within business 3 days. <\/p>"
+          }
+        },
+        "216217a1-6988-4a4d-9601-80d0d68515bf": {
+          "type": "item",
+          "settings": {
+            "title": "Do you offer free shipping or expedited shipping options?",
+            "content": "<p>All Team XND members receive free shipping on every single order. <br\/><br\/>Right now we do not offer expedited shipping options but our standard FAST shipping option usually arrives within 3 business days.<\/p>"
+          }
+        },
+        "0648d0bd-3ef3-4e1b-a674-e1e5170cceba": {
+          "type": "item",
+          "settings": {
+            "title": "Tracking?",
+            "content": "<p>We will send you a tracking link when you place an order. Please allow 24 hours before tracking information is actually populated. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "84b6a815-d48d-4694-a418-c29d1cf91dc4",
+        "773a43c8-71f5-43cc-9049-6bda4171ce0b",
+        "504aca52-673a-4d50-a993-78a709a11840",
+        "216217a1-6988-4a4d-9601-80d0d68515bf",
+        "0648d0bd-3ef3-4e1b-a674-e1e5170cceba"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Shipping",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "3ccf898c-e0e6-4510-a68d-baaf06439ebb": {
+      "type": "accordion-content",
+      "blocks": {
+        "7ac82b1d-1c6f-4574-af69-d3fc200c2957": {
+          "type": "item",
+          "settings": {
+            "title": "What is your return policy?",
+            "content": "<p>Xendurance offers a one hundred percent (100%) 30-day, money-back satisfaction guarantee on all Xendurance products.<br\/><br\/>Refunds are valid for 30 days from purchase date. Please email info@xendurance.com if you would like to return or exchange your order.<\/p>"
+          }
+        },
+        "7ec304d7-7dd0-49cd-9c3e-2feb280d7e8a": {
+          "type": "item",
+          "settings": {
+            "title": "Damaged or Faulty Products",
+            "content": "<p>In the rare case that you have received a damaged product, please reach out to info@xendurance.com and we will help resolve the issue.<\/p>"
+          }
+        },
+        "c01be31b-62f3-4ff0-a7b1-155f78a05eb5": {
+          "type": "item",
+          "settings": {
+            "title": "How do I initiate a return or exchange?",
+            "content": "<p>Please email info@xendurance.com with your order number and we will help get you sorted out!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7ac82b1d-1c6f-4574-af69-d3fc200c2957",
+        "7ec304d7-7dd0-49cd-9c3e-2feb280d7e8a",
+        "c01be31b-62f3-4ff0-a7b1-155f78a05eb5"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Returns & Warranty",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b61efea8-74e1-42aa-a66d-dd5d20728b4a": {
+      "type": "accordion-content",
+      "disabled": true,
+      "blocks": {
+        "627ac6ad-f2d9-4370-ac73-d0d2a3bfa4f7": {
+          "type": "item",
+          "settings": {
+            "title": "Why should I create an XND account?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "9033ab7c-5c74-4da9-9e84-64ee93a39092": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "8bdd047e-d741-4099-8d3a-a84ae78571f2": {
+          "type": "item",
+          "settings": {
+            "title": "What is your returns policy?",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "627ac6ad-f2d9-4370-ac73-d0d2a3bfa4f7",
+        "9033ab7c-5c74-4da9-9e84-64ee93a39092",
+        "8bdd047e-d741-4099-8d3a-a84ae78571f2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Team XND",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "f93cb3e1-be2e-48be-a35b-06fd722b8f69": {
+      "type": "contact",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Still can't find what you're looking for?",
+        "content": "<p>Get in touch with us through the form and we will get back to you as soon as possible. <\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "aa04e43e-e0da-4f85-861e-34e534dc1b81": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Membership"
+          }
+        },
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Have a question about Team XND?",
+            "heading_tag": "h1",
+            "text_color": "#ffffff",
+            "gradient": ""
+          }
+        },
+        "260e082f-2beb-4467-bb96-c4a45dc7298e": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Visit Team XND Page",
+            "url": "shopify:\/\/pages\/team-xnd-signup",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-2": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-0",
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-1",
+        "260e082f-2beb-4467-bb96-c4a45dc7298e",
+        "template--16030540595388__aa04e43e-e0da-4f85-861e-34e534dc1b81-168810260396eb2902-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "b3543429-1b58-4fbc-8b00-b6770b20b5fd",
+    "main",
+    "be50793b-f8d4-4246-9c53-f7d93753bb8c",
+    "6bc2d039-d8a2-40d1-90b6-75ff9d8e955b",
+    "278214ed-c4eb-4c9b-8a99-671bd27887f2",
+    "fd599574-3b6b-4017-bb33-676ce1e440c0",
+    "7f6a1770-498a-4c6b-8afd-1369e19a6e65",
+    "3ccf898c-e0e6-4510-a68d-baaf06439ebb",
+    "b61efea8-74e1-42aa-a66d-dd5d20728b4a",
+    "f93cb3e1-be2e-48be-a35b-06fd722b8f69",
+    "aa04e43e-e0da-4f85-861e-34e534dc1b81"
+  ]
+}

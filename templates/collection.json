@@ -1,0 +1,161 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h2",
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/XND_1.jpg",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "featured_product": "lean",
+        "featured_product_members": "lean-3",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e": {
+      "type": "image-link-blocks",
+      "disabled": true,
+      "blocks": {
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.jpg",
+            "stretch_image": true,
+            "link_text": "Skin",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-1": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-2": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-3": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-0",
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-1",
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-2",
+        "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-3"
+      ],
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "bcb40938-f2f1-4248-a094-ed116737e41c": {
+          "type": "promotion_image",
+          "settings": {
+            "position": 4,
+            "column_span": "1",
+            "image": "shopify:\/\/shop_images\/Extreme_Endurance_4.jpg",
+            "title": "JOIN TEAM XND & SAVE",
+            "content": "",
+            "link_url": "shopify:\/\/pages\/team-xnd-signup",
+            "link_text": "Learn More",
+            "heading_tag": "h3",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "f1543895-1b75-4769-bbaf-6c1f1f11725a": {
+          "type": "collection_filter",
+          "settings": {
+            "collection": "all-products",
+            "collection_filters": "packs,daily,energy,transform,recovery,skin"
+          }
+        },
+        "1089b347-d343-4e10-a5c5-ebcd5d6fbc60": {
+          "type": "collection_filter",
+          "disabled": true,
+          "settings": {
+            "collection": "skin",
+            "collection_filters": "packs,daily,energy,tranform,recovery,sleep,skin"
+          }
+        }
+      },
+      "block_order": [
+        "bcb40938-f2f1-4248-a094-ed116737e41c",
+        "f1543895-1b75-4769-bbaf-6c1f1f11725a",
+        "1089b347-d343-4e10-a5c5-ebcd5d6fbc60"
+      ],
+      "settings": {
+        "products_per_page": 40,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "horizontal",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e",
+    "main"
+  ]
+}

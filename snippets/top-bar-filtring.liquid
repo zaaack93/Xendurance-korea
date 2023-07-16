@@ -1,0 +1,40 @@
+{% assign filters_active = "" %}
+    {% assign filters_not_disabled = "" %}
+    {% assign count_nbr_active = 0 %}
+    {%- assign filters_default = search.filters | default: collection.filters -%}
+        {%- for filter in filters_default -%}
+            {%- for filter_value in filter.values -%}
+            {% assign filter_check_count = filter.values | where: 'count', 0 %}
+            {% if filter_value.active %}
+                {% assign filters_active = filters_active | append : ',' | append : filter_value.label %}
+                {% assign count_nbr_active = count_nbr_active | plus : 1 %}
+            {% else %}
+                {% assign filters_not_disabled = filters_not_disabled | append : ',' | append : filter_value.label %}
+            {%endif%}
+        {%- endfor -%}
+    {%endfor%}
+<top-bar-filters class="nav_top-filter-container" data-filters-active='{{ filters_active }}' data-filters-available='{{ filters_not_disabled }}'>
+    <div class="nav_top-filter-inner">
+        <span class="top-filter-text">
+            Filter:
+        </span>
+        
+        {% assign filtring_categories = filters_categories | downcase | split : "," %}
+        <div class="top-filter-checks">
+            <div class="top-filter-checks-item">
+                <input type="checkbox" id="filter-for-all" value="all" name="filter.p.tag">
+                <button for="filter-for-all" id="label-for-all">All</button>
+            </div>
+            {%for option in filtring_categories%}
+                <div class="top-filter-checks-item">
+                    <button class="buttons-to-check" data-for-tag="{{option}}">{{option}}</button>
+                </div>
+            {%endfor%}
+        </div>
+    </div>
+</top-bar-filters>
+<style>
+    .collection__top-bar,facet-floating-filter{
+        display: none;
+    }
+</style>

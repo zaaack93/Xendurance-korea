@@ -1,0 +1,4 @@
+{% assign isMember = false %}
+{% if customer and customer.tags contains "XNDSHIP" %}
+	{% assign isMember = true %}
+{% endif %}

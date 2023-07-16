@@ -1,0 +1,67 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+HORIZONTAL PRODUCT COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in product page, blog page or collection to highlight small product
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product to render
+* size: can be "sm" or nothing
+* show_add_to_cart: a boolean indicating if we show the add to cart
+* background: an optional background color for the tile
+* text_color: an optional text color for the tile
+* output_link: if set to false, the link around the link is not set
+{%- endcomment -%}
+
+{%- capture class -%}horizontal-product {% if size == 'sm' %}horizontal-product--sm{% endif %} {% if background != 'rgba(0,0,0,0)' %}rounded-xs{% endif %} snap-center{%- endcapture -%}
+
+<div {% render 'surface', class: class, background: background, text_color: text_color %}>
+  {% if image != blank %}
+    {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 54px, 80px', widths: '54,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+  {% else %}
+    {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 54px, 80px', widths: '54,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+  {% endif %}
+  <div class="horizontal-product__info">
+    <div class="v-stack">
+      <p class="text-sm text-subdued text-membership-with-price">
+        Save <span class="bold specialize-price">{{- cart.total_price | times : 0.25 | money_with_currency -}}</span> with<span class="second-line-text"> Team XND Membership</span>
+      </p>
+    </div>
+
+    {%- if show_add_to_cart -%}
+      <div class="horizontal-product__cta">
+        {%- if product.available -%}
+          {%- capture unique_id -%}{{ section.id }}-{{ block.id }}-{{ product.id }}{%- endcapture -%}
+          {%- capture button_content -%}{{ 'product.general.add_to_cart_short' | t }}{%- endcapture -%}
+
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+            {%- capture product_form_id -%}complementary-product-{{ unique_id }}{%- endcapture -%}
+
+            {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              {%- render 'button', content: button_content, type: 'submit', size: 'sm', subdued: true -%}
+            {%- endform -%}
+          {%- else -%}
+            {%- capture quick_buy_id -%}quick-buy-horizontal-{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input type="hidden" name="selling_plan" value="{{product.selling_plan_groups[0].selling_plans[0].id}}">
+              {%- render 'button', type : "submit", content: button_content, size: 'md', subdued: true, background: atc_button_background, text_color: atc_button_text_color -%}
+            {%- endform -%}
+            
+          {%- endif -%}
+        {%- else -%}
+          {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+          {%- render 'button', content: button_content, size: 'md', disabled: true, subdued: true, background: atc_button_background, text_color: atc_button_text_color -%}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

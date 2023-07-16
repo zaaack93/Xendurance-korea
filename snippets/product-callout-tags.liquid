@@ -1,0 +1,15 @@
+{%if product.metafields.custom.callout_badge.value != blank%}
+    <div class="callout-container">
+        {% assign callout_items = product.metafields.custom.callout_badge.value.text | split : ' / ' %}
+        {% for item in  callout_items %}
+            <span class="callout-badge {% if product.metafields.custom.callout_badge.value.icon == blank %} padd-same {%endif%}" style="background-color:{{product.metafields.custom.callout_badge.value.background_color}};">
+                {% if product.metafields.custom.callout_badge.value.icon != blank %}
+                    <span class="img-badge">
+                        <img src="{{ product.metafields.custom.callout_badge.value.icon | img_url }}" class="badge-icon" />
+                    </span>
+                {% endif %}
+                <span class="text-badge">{{item}}</span>
+            </span>
+        {% endfor %}
+    </div>
+{%endif%}

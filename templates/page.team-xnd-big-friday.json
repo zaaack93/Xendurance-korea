@@ -1,0 +1,460 @@
+{
+  "sections": {
+    "317f8e6a-3ca3-4df0-8ded-343a8922ea86": {
+      "type": "media-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--16054543515836__317f8e6a-3ca3-4df0-8ded-343a8922ea86-16880031849ea33a45-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XND-Web_Banner-Athlete_Collage-Desk_1_276809f0-c614-4419-ad93-e5d8825e49e0.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "BIG FRIDAY Workouts",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16054543515836__317f8e6a-3ca3-4df0-8ded-343a8922ea86-16880031849ea33a45-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "c6f89ea7-4894-442c-96b2-fad1608cda7d": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--16054543515836__c6f89ea7-4894-442c-96b2-fad1608cda7d-168800243002f378df-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XND-Web_Banner-Athlete_Collage-Desk_1-BW.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--16054543515836__c6f89ea7-4894-442c-96b2-fad1608cda7d-168800243002f378df-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XND-Web_Banner-Athlete_Collage-Desk_1_10710c55-a3e8-4d31-aa75-468d99367319.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Workouts submitted by Team XND",
+            "title": "BIG FRIDAY",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16054543515836__c6f89ea7-4894-442c-96b2-fad1608cda7d-168800243002f378df-0",
+        "template--16054543515836__c6f89ea7-4894-442c-96b2-fad1608cda7d-168800243002f378df-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "md",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
+    "4e937f69-627d-4f00-aa78-827779c29318": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "text": "BIG FRIDAY Workouts",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-28_at_7.48.53_AM.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Workouts posted by the best of Team XND",
+            "title": "BIG FRIDAY",
+            "heading_tag": "h1",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "md",
+        "controls_type": "none",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5f1fa0af-69fa-425a-be5a-1b6533ca79bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16054543515836__5f1fa0af-69fa-425a-be5a-1b6533ca79bc-16875039288c6a8728-0": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16054543515836__5f1fa0af-69fa-425a-be5a-1b6533ca79bc-16875039288c6a8728-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Recent BIG FRIDAY Workouts",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16054543515836__5f1fa0af-69fa-425a-be5a-1b6533ca79bc-16875039288c6a8728-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Submit your workout below to be featured. We love great pictures and detailed workouts... help us inspire others every Friday to go out and have a BIG FRIDAY.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16054543515836__5f1fa0af-69fa-425a-be5a-1b6533ca79bc-16875039288c6a8728-0",
+        "template--16054543515836__5f1fa0af-69fa-425a-be5a-1b6533ca79bc-16875039288c6a8728-1",
+        "template--16054543515836__5f1fa0af-69fa-425a-be5a-1b6533ca79bc-16875039288c6a8728-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIG_FRIDAY___Hayley_Manners_-_IG_Story-EDIT.jpg",
+            "column_size": "3",
+            "title": "Hayley Manners",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIG_FRIDAY_PaigeWoodall_IG_Story-EDIT.jpg",
+            "column_size": "3",
+            "title": "Paige Woodall",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIG_FRIDAY___Nathan_Harpster_-_IG_Story-EDIT.jpg",
+            "column_size": "3",
+            "title": "Nathan Harpster",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0",
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1",
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "2823adf9-0afa-4247-b18e-fb935b268813": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "511dc69e-632c-4483-b161-4abaff4b85ff": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIG_FRIDAY___Hayley_Manners_-_IG_Story-EDIT.jpg",
+            "column_size": "3",
+            "title": "Hayley Manners",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "75b4055d-0beb-4340-bd4d-765711554a69": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIG_FRIDAY_PaigeWoodall_IG_Story-EDIT.jpg",
+            "column_size": "3",
+            "title": "Paige Woodall",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "45825ab2-1a50-4fa8-93fa-461783b2e370": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIG_FRIDAY___Nathan_Harpster_-_IG_Story-EDIT.jpg",
+            "column_size": "3",
+            "title": "Nathan Harpster",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "511dc69e-632c-4483-b161-4abaff4b85ff",
+        "75b4055d-0beb-4340-bd4d-765711554a69",
+        "45825ab2-1a50-4fa8-93fa-461783b2e370"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1284832e-4ff2-46b3-8365-2765229b44f4": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "SUBMIT YOUR WORKOUTS",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/workout.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Team XND Big Friday",
+            "content": "<p>Submit your workout to be featured on <strong>BIG FRIDAY<\/strong><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "7ee026b0-fa9e-4d97-a017-ba3e7f67916c": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div data-tf-widget=\"M5IQRNzg\" data-tf-opacity=\"100\" data-tf-iframe-props=\"title=BIG FRIDAY\" data-tf-transitive-search-params=\"\" data-tf-disable-scroll=\"\" data-tf-auto-resize=\"\" data-tf-medium=\"snippet\" style=\"width:100%;height:500px;\"><\/div><script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script>;",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "168792061600bca8d9": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "1828aa6e-41b6-4ab4-85b0-c522cc626228": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Replace with",
+        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts.<\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "b6b63dab-7d7d-48f8-8878-0d6d9d1a722f": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"klaviyo-form-V7YSgZ\"><\/div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "317f8e6a-3ca3-4df0-8ded-343a8922ea86",
+    "c6f89ea7-4894-442c-96b2-fad1608cda7d",
+    "4e937f69-627d-4f00-aa78-827779c29318",
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0",
+    "main",
+    "5f1fa0af-69fa-425a-be5a-1b6533ca79bc",
+    "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac",
+    "2823adf9-0afa-4247-b18e-fb935b268813",
+    "1284832e-4ff2-46b3-8365-2765229b44f4",
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66",
+    "7ee026b0-fa9e-4d97-a017-ba3e7f67916c",
+    "168792061600bca8d9",
+    "1828aa6e-41b6-4ab4-85b0-c522cc626228",
+    "b6b63dab-7d7d-48f8-8878-0d6d9d1a722f"
+  ]
+}

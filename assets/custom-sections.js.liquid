@@ -1,0 +1,734 @@
+// js/sections/Hero-section-with-bubbles.js
+class BubblesContainer extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+    connectedCallback() {
+      this.render();
+    }
+  
+    render() {
+      const categoryBubbles = Array.from(this.querySelectorAll('.bubble'));
+      const groupedBlocks = groupBlocksByCategory(categoryBubbles);
+  
+      const tabHeader = document.createElement('div');
+      tabHeader.classList.add('tab-header');
+  
+      groupedBlocks.forEach((category) => {
+        const tabItem = document.createElement('div');
+        tabItem.classList.add('tab-item');
+        tabItem.textContent = category;
+        tabItem.addEventListener('click', () => {
+          this.toggleVisibility(category);
+        });
+        tabHeader.appendChild(tabItem);
+      });
+  
+      this.prepend(tabHeader);
+      this.toggleVisibility(groupedBlocks[0])
+    }
+  
+    toggleVisibility(category) {
+        const bubbles = Array.from(this.querySelectorAll('.bubble'));
+        bubbles.forEach((bubble) => {
+            if (bubble.dataset.category === category) {
+                bubble.style.display = 'block';
+            }
+            else{
+                bubble.style.display = 'none';
+            }
+        });
+
+        const tabItems = Array.from(this.querySelectorAll('.tab-item'));
+        tabItems.forEach((tabItem) => {
+          if (tabItem.textContent === category) {
+            tabItem.classList.add('active');
+          } else {
+            tabItem.classList.remove('active');
+          }
+        });
+        document.dispatchEvent(new CustomEvent('slide-category:update', { detail: { category } }));
+    }
+  }
+  
+  function groupBlocksByCategory(blocks) {
+    const categories = new Set(blocks.map((block) => block.dataset.category));
+    return Array.from(categories);
+  }
+  
+customElements.define('bubbles-container', BubblesContainer);
+
+
+
+ // js/sections/featured-collection-list.js 
+ class FeaturedCollectionList extends HTMLElement {
+  constructor() {
+    super();
+    this.categoryBubbles = null;
+    this.tabItems = [];
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  render(){
+    const collections = Array.from(this.querySelectorAll('.products-category'));
+      if(collections.length>0){
+      this.tabItems = Array.from(this.querySelectorAll('.tab-collection'));
+
+      this.tabItems.forEach((tabItem) => {
+        tabItem.addEventListener('click', () => {
+          const selectedCategory = tabItem.dataset.category;
+          this.showCollectionByCategory(selectedCategory);
+        });
+      });
+      this.showCollectionByCategory(collections[0].dataset.category)
+    }
+  }
+
+  showCollectionByCategory(category) {
+    const collections = Array.from(this.querySelectorAll('.products-category'));
+        collections.forEach((collection) => {
+            if (collection.dataset.category === category) {
+              collection.style.display = 'grid';
+            }
+            else{
+              collection.style.display = 'none';
+            }
+        });
+
+        const tabItems = Array.from(this.querySelectorAll('.tab-collection'));
+        tabItems.forEach((tabItem) => {
+          if (tabItem.dataset.category === category) {
+            tabItem.classList.add('active');
+          } else {
+            tabItem.classList.remove('active');
+          }
+        });
+  }
+
+}
+customElements.define('featured-collection-list', FeaturedCollectionList);
+
+
+
+
+// js/sections/top-bar-filters.js
+class TopBarFilters extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.available_filters=this.dataset.filtersAvailable.split(',');
+    this.active_filters=this.dataset.filtersActive.split(',');
+    this.render();
+  }
+
+  render() {
+    const categoryFilters = Array.from(this.querySelectorAll('.buttons-to-check'));
+    categoryFilters.forEach((category) =>{
+      let availability=this.checkAvailability(category);
+      switch (availability) {
+        case 'available':
+          category.addEventListener("click", (event)=> {
+            this.handleFilter(category.dataset.forTag);
+          });
+          break;
+        case 'active':
+          category.classList.add('Active_filter');
+          category.addEventListener("click", (event)=> {
+            this.handleFilter(category.dataset.forTag);
+          });
+          break;
+        case 'notallowed':
+          category.disabled=true;
+          break;
+      }
+    })
+
+    //check for all filters and all handle to click
+    let productCard = document.querySelectorAll('product-card');
+    if(this.active_filters.length==1 || productCard.length == 0){
+      this.querySelector('#label-for-all').classList.add('Active_filter');
+    }
+    this.querySelector('#label-for-all').addEventListener("click", (event)=> {
+      // Get the reset button
+      const label = document.querySelector("a.facet-clear-all");
+      // If the label element is found, trigger a click event on it
+      if (label) {
+        label.click();
+      }
+    });
+  }
+
+  handleFilter(category) {
+    const inputElements = document.querySelectorAll('input[name="filter.p.tag"]');
+    inputElements.forEach(function(element){
+        if(element.value.toLowerCase().replaceAll(/\s/g,'')==category.toLowerCase().replaceAll(/\s/g,'')){
+            element.click();
+            return
+        }
+    })
+  }
+
+  checkAvailability(category) {
+    let foundValueActive = this.active_filters.find(function(element) {
+      return element.toLowerCase().replaceAll(/\s/g,'') === category.dataset.forTag.toLowerCase().replaceAll(/\s/g,'');
+    });
+
+    let foundValueAvailable = this.available_filters.find(function(element) {
+      return element.toLowerCase().replaceAll(/\s/g,'') === category.dataset.forTag.toLowerCase().replaceAll(/\s/g,'');
+    });
+    if(foundValueActive){
+      return "active"
+    }
+    else if (foundValueAvailable){
+      return "available"
+    }
+    else {
+      return "notallowed"
+    }
+  }
+}
+
+customElements.define('top-bar-filters', TopBarFilters);
+
+import {fetchCart} from "{{ 'theme.js' | asset_url }}";
+class MainProduct extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  async render() {
+    const cartContent = await fetchCart; // JSON cart content
+    cartContent?.items.forEach(item => {
+      if(item.id==40692118094012){
+        this.querySelector('.product').classList.add('cart-has-membership')
+      }
+    });
+  }
+}
+
+customElements.define('main-product', MainProduct);
+
+
+// Define the custom web component for smartrr
+class PurchaseOptions extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    // This method is called when the component is added to the DOM
+    // Execute something here
+    this.render();
+  }
+
+  render() {
+    // extract all selling plans
+    const sellingPlans = Array.from(this.querySelectorAll('div[data-smartrr-selling-plan-group-id]'));
+
+    //append prepend title
+    // Create a new element
+    let titleElement = document.createElement('p');
+
+    // Set attributes or properties for the new element if needed
+    titleElement.textContent = 'Choose your option:';
+    titleElement.className = 'smartrr-title';
+    this.prepend(titleElement);
+
+    sellingPlans.forEach((sellingPlan) =>{
+      let content,newElement,sellContent,price_cotnainer,newregulralabel,content_subscribe_price,content_compare_price,content_regular_price,original_price_from_first;
+      switch (sellingPlan.dataset.smartrrSellingPlanGroupId){
+        case "6a09e170577cb57e08a9a5e44f9fbf31c342d37e":
+          // for the second statement the customer loggedIn
+          // code block
+          content=sellingPlan.querySelector('.smartrr-pills-header');
+          // Update the text content of the div
+          content.firstChild.nodeValue = 'Subscribe';
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          setTimeout(() => {
+            //check with compar price and regular price
+            content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
+            content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
+            content_regular_price=price_cotnainer.querySelector('span[data-smartrr-regular-price]').textContent
+            // debugger
+            // if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
+            //   price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
+            //   price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            // }
+            if(content_subscribe_price!=content_compare_price || content_compare_price!='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.remove('smartrr-widget-hide');
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.add('price-compare-show')
+              price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
+            }
+            // else 
+            
+            // if (content_subscribe_price!=content_compare_price && content_compare_price!='$INVALID'){
+            //   //for this cas to show product with their compare price
+            //   price_cotnainer.querySelector('span[data-smartrr-compare-price]').classList.add('price-compare-show')
+            // }
+          }, 2000);
+
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newElement.textContent = '2X REWARD POINTS';
+          newElement.className = 'smartrr-badge-item';
+
+          // Append the new element as a child to the div
+          sellingPlan.appendChild(newElement);
+
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = ' (Free US Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price';
+          price_cotnainer.prepend(newregulralabel);
+
+          //content options
+          sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>" 
+          break;
+
+        case "da1e61c01b6561e74b0298c2b931b5c94d7a4bd3":
+          // for the second statement the customer not loggedIn
+          // code block
+          content=sellingPlan.querySelector('.smartrr-pills-header');
+          // Update the text content of the div
+          content.firstChild.nodeValue = 'Subscribe and Save';
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newElement.textContent = '10% OFF';
+          newElement.className = 'smartrr-badge-item';
+
+          // Append the new element as a child to the div
+          sellingPlan.appendChild(newElement);
+
+          //content options
+          sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>"          
+          break;
+
+        case "ba11e52e1a6aa078dca92bf274d23a25dce62018":
+          // for the third statement the customer not loggedIn
+          // code block
+          content=sellingPlan.querySelector('.smartrr-pills-header');
+          // Update the text content of the div
+          content.firstChild.nodeValue = 'Become a Member';
+
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(Free US Shipping + Rewards)';
+          newregulralabel.className = 'data-smartrr-subscribe-price sm-max:hidden';
+          price_cotnainer.prepend(newregulralabel);
+
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(+Free Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price sm:hidden';
+          price_cotnainer.prepend(newregulralabel);
+
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newElement.textContent = '25% OFF';
+          newElement.className = 'smartrr-badge-item';
+
+          // Append the new element as a child to the div
+          sellingPlan.appendChild(newElement);
+
+          //content options
+          sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'>Purchase a Team XND Membership and receive:</p><ul><li>25% Off Sitewide</li><li>$100 Worth of Product Rewards</li><li>Free US Shipping. No Order Minimums.</li><li>Exclusive Partner Perks</li></ul></div>"  
+          break;
+
+        default:
+          // code block
+          content=sellingPlan.querySelector('.smartrr-pills-header');
+          // Update the text content of the div
+          content.firstChild.nodeValue = 'Order once';
+          // Create a new element
+          newElement = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newElement.textContent = document.querySelector('main-product')?.dataset.productSellingPlan;
+          newElement.className = 'smartrr-badge-item badge-for-ordre-once';
+
+          // Append the new element as a child to the div
+          sellingPlan.appendChild(newElement);
+
+          //add reguular price
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          {% comment %} setTimeout(() => {
+            //check with compar price and regular price
+            content_subscribe_price=price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').textContent
+            content_compare_price=price_cotnainer.querySelector('span[data-smartrr-compare-price]').textContent
+            content_regular_price=price_cotnainer.querySelector('span[data-smartrr-regular-price]').textContent
+
+            if(content_subscribe_price==content_regular_price || content_regular_price=='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-regular-price]').style.display='none';
+              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            }
+            else if(content_subscribe_price==content_compare_price || content_compare_price=='$INVALID'){
+              price_cotnainer.querySelector('span[data-smartrr-compare-price]').style.display='none';
+              price_cotnainer.querySelector('span[data-smartrr-subscribe-price]').classList.add('price-regular')
+            }
+          }, 2000); {% endcomment %}
+
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = ' (Free US Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price';
+          price_cotnainer.prepend(newregulralabel);
+          
+          break;
+      }
+
+    });
+  }
+}
+
+// Select the element with the desired class name
+const element = document.querySelector('.smartrr-purchase-options');
+
+// Create an instance of the custom element with the new node name
+const customElement = document.createElement('custom-options');
+if(element && customElement){
+  // Clone the attributes and children from the original element to the custom element
+  Array.from(element.attributes).forEach((attr) => {
+    customElement.setAttribute(attr.name, attr.value);
+  });
+  while (element.firstChild) {
+    customElement.appendChild(element.firstChild);
+  }
+
+  // Replace the original element with the new custom element
+  element.parentNode.replaceChild(customElement, element);
+
+  // Define the custom element for the new custom node name
+  customElements.define(customElement.nodeName.toLowerCase(), PurchaseOptions);
+}
+
+//override productForm
+import {ProductForm} from "{{ 'theme.js' | asset_url }}"; // Import the theme web component
+
+class customProductForm extends ProductForm {
+  async _onSubmit(event) {
+    event.preventDefault();
+    if (!this.checkValidity()) {
+      this.reportValidity();
+      return;
+    }
+    const submitButtons = Array.from(this.elements).filter((button) => button.type === "submit");
+    submitButtons.forEach((submitButton) => {
+      submitButton.setAttribute("disabled", "disabled");
+      submitButton.setAttribute("aria-busy", "true");
+    });
+    let sectionsToBundle = ["variant-added"];
+    document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
+    const formData = new FormData(this);
+    formData.set("sections", sectionsToBundle.join(","));
+    formData.set("selling_plan",document.querySelector('.product-info input[name="selling_plan"]')?.value)
+    if(document.querySelector('.product-info input[name="selling_plan"]')?.value == 4549771452){
+      // const items = [];
+      // let item = {};
+      // for (const [key, value] of formData.entries()) {
+
+      //   if (key === 'id' || key === 'quantity' || key === "selling_plan") {
+      //     item[key] = Number(value);
+      //     formData.delete(key);
+      //   }
+      // }
+      // items.push({ ...item });
+
+      // items.push({id: 40692118094012, quantity:1 , selling_plan: 4565696700 });
+      // formData.set("items", JSON.stringify(items));
+      const formDataMemberShip = new FormData();
+      formDataMemberShip.append('id', 40692118094012);
+      formDataMemberShip.append('quantity', 1);
+      formDataMemberShip.append('selling_plan', 4565696700);
+      await fetch(`${Shopify.routes.root}cart/add.js`, {
+        body: formDataMemberShip,
+        method: "POST",
+        headers: {
+          "X-Requested-With": "XMLHttpRequest"
+          // Needed for Shopify to check inventory
+        }
+      });
+    }
+    
+    formData.set("sections_url", `${Shopify.routes.root}variants/${this.id.value}`);
+    const response = await fetch(`${Shopify.routes.root}cart/add.js`, {
+      body: formData,
+      method: "POST",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest"
+        // Needed for Shopify to check inventory
+      }
+    });
+    submitButtons.forEach((submitButton) => {
+      submitButton.removeAttribute("disabled");
+      submitButton.removeAttribute("aria-busy");
+    });
+    const responseJson = await response.json();
+    if (response.ok) {
+      if (window.themeVariables.settings.cartType === "page" || window.themeVariables.settings.pageType === "cart") {
+        return window.location.href = `${Shopify.routes.root}cart`;
+      }
+      const cartContent = await (await fetch(`${Shopify.routes.root}cart.js`)).json();
+      cartContent["sections"] = responseJson["sections"];
+      this.dispatchEvent(new CustomEvent("variant:add", {
+        bubbles: true,
+        detail: {
+          items: responseJson.hasOwnProperty("items") ? responseJson["items"] : [responseJson],
+          cart: cartContent
+        }
+      }));
+      document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+        bubbles: true,
+        detail: {
+          baseEvent: "variant:add",
+          cart: cartContent
+        }
+      }));
+    } else {
+      this.dispatchEvent(new CustomEvent("cart:error", {
+        bubbles: true,
+        detail: {
+          error: responseJson["description"]
+        }
+      }));
+    }
+  }
+}
+
+// Create the custom elements
+if (!window.customElements.get("custom-product-form")) {
+  window.customElements.define("custom-product-form", customProductForm, { extends: "form" });
+}
+
+
+
+class quickProductForm extends ProductForm {
+  async _onSubmit(event) {
+  event.preventDefault();
+  //delete smarter div
+  debugger
+  this.querySelector('input[data-smartrr-widget-selling-plan-input]')?.remove();
+    if (!this.checkValidity()) {
+      this.reportValidity();
+      return;
+    }
+    const submitButtons = Array.from(this.elements).filter((button) => button.type === "submit");
+    submitButtons.forEach((submitButton) => {
+      submitButton.setAttribute("disabled", "disabled");
+      submitButton.setAttribute("aria-busy", "true");
+    });
+    let sectionsToBundle = ["variant-added"];
+    document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
+    const formData = new FormData(this);
+    formData.set("sections", sectionsToBundle.join(","));
+    formData.set("sections_url", `${Shopify.routes.root}variants/${this.id.value}`);
+    const response = await fetch(`${Shopify.routes.root}cart/add.js`, {
+      body: formData,
+      method: "POST",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest"
+        // Needed for Shopify to check inventory
+      }
+    });
+    submitButtons.forEach((submitButton) => {
+      submitButton.removeAttribute("disabled");
+      submitButton.removeAttribute("aria-busy");
+    });
+    const responseJson = await response.json();
+    if (response.ok) {
+      if (window.themeVariables.settings.cartType === "page" || window.themeVariables.settings.pageType === "cart") {
+        return window.location.href = `${Shopify.routes.root}cart`;
+      }
+      const cartContent = await (await fetch(`${Shopify.routes.root}cart.js`)).json();
+      cartContent["sections"] = responseJson["sections"];
+      this.dispatchEvent(new CustomEvent("variant:add", {
+        bubbles: true,
+        detail: {
+          items: responseJson.hasOwnProperty("items") ? responseJson["items"] : [responseJson],
+          cart: cartContent
+        }
+      }));
+      document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+        bubbles: true,
+        detail: {
+          baseEvent: "variant:add",
+          cart: cartContent
+        }
+      }));
+    } else {
+      this.dispatchEvent(new CustomEvent("cart:error", {
+        bubbles: true,
+        detail: {
+          error: responseJson["description"]
+        }
+      }));
+    }
+  }
+
+}
+
+
+// Create the custom elements
+if (!window.customElements.get("quick-product-form")) {
+  window.customElements.define("quick-product-form", quickProductForm, { extends: "form" });
+}
+
+
+class KlaviyoFormComponent extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.form = this.querySelector('.form-klaviyo-newsletter');
+    this.form.addEventListener('submit', this.onSubmit.bind(this));
+  }
+
+  onSubmit(event) {
+    event.preventDefault();
+    // Add any additional logic or validation here
+    const emailInput = this.form.querySelector('input[name="contact[email]"]').value;
+
+    const url = 'https://a.klaviyo.com/client/subscriptions/?company_id=VQ9yJa';
+
+    const data = {
+      data: {
+        type: "subscription",
+        attributes: {
+          list_id: "XQXPxW",
+          email: emailInput,
+        }
+      }
+    };
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Revision': '2023-06-15'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(data => {
+        if(data.ok){
+          this.querySelector('form-klaviyo-newsletter .form_on_success').style.display = "block";
+          this.querySelector('form-klaviyo-newsletter .fieldset-with-submit').style.display = "none";
+        }
+        else{
+          this.querySelector('form-klaviyo-newsletter .form_on_danger').style.display = "block";
+          const submitButton = this.form.querySelector('button[type="submit"]');
+          submitButton.setAttribute('aria-busy', 'false');
+
+        }
+      })
+      .catch(errors => {
+        this.querySelector('form-klaviyo-newsletter .form_on_danger').style.display = "block";
+        const submitButton = this.form.querySelector('button[type="submit"]');
+        submitButton.setAttribute('aria-busy', 'false');
+      });
+  }
+}
+
+customElements.define('form-klaviyo-newsletter', KlaviyoFormComponent);
+class FeaturedChartCustomized extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    //calculate the width
+    const calculateWidth = () => {
+      if (window.innerWidth < 700) {
+        // Select the table within the web component
+        const table = this.querySelector('.feature-table');
+  
+        // Get the computed width of the table
+        const tableWidth = getComputedStyle(table).width;
+  
+        const secondTd = this.querySelector('tbody td:nth-child(2)');
+        const secondTdWidth = getComputedStyle(secondTd).width;
+  
+        // Calculate the width for the first <td> in <thead>
+        const tdWidth = `calc(${tableWidth} - ${secondTdWidth})`;
+  
+        // Set the width for the first <td> in <thead>
+        const firstTd = this.querySelector('thead td');
+        firstTd.style.minWidth = tdWidth;
+        firstTd.style.maxWidth = tdWidth;
+      }
+    }
+    calculateWidth();
+    window.addEventListener('resize', calculateWidth);
+
+    //add bullet checked
+    const table = this.querySelector('.feature-table');
+    const firstBullet = this.querySelector('.bullet-pagination li:first-child');
+    const secondBullet = this.querySelector('.bullet-pagination li:last-child');
+
+
+    firstBullet.addEventListener('click', () => {
+      table.scrollLeft = 0; // Scroll to the beginning of the scrollbar
+      setActiveBullet(firstBullet,secondBullet)
+    });
+
+    secondBullet.addEventListener('click', () => {
+      table.scrollLeft = table.scrollWidth - table.clientWidth; // Scroll to the end of the scrollbar
+      setActiveBullet(secondBullet,firstBullet)
+    });
+
+
+    table.addEventListener('scroll', () => {
+      setActiveBulletBasedOnScroll(table, firstBullet, secondBullet);
+    });
+
+    //trigger click on the first button
+    setActiveBulletBasedOnScroll(table, firstBullet, secondBullet);
+
+    
+  }
+}
+function setActiveBullet(activeBullet, inactiveBullet) {
+  activeBullet.classList.add('active-bull');
+  inactiveBullet.classList.remove('active-bull');
+}
+
+function setActiveBulletBasedOnScroll(table, firstBullet, secondBullet) {
+  const scrollLeft = table.scrollLeft;
+
+  if (scrollLeft === 0) {
+    setActiveBullet(firstBullet, secondBullet);
+  } else if (Math.floor(scrollLeft) >= Math.floor(table.scrollWidth - table.clientWidth - 5 )) {
+    setActiveBullet(secondBullet, firstBullet);
+  }
+}
+customElements.define('feature-chart-customized', FeaturedChartCustomized);

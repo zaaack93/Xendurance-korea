@@ -1,0 +1,535 @@
+{
+  "sections": {
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_Desktop_6.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Team XND Victory Trip",
+            "title": "Mexico 2024: October 17 - 20",
+            "heading_tag": "h1",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030540628156__060504f5-2e44-4a39-aac4-9ef0b0cfb5b0-16868779217c2cb072-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "md",
+        "controls_type": "none",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "4872f2ee-ee86-402b-a966-8c23b0f7ae3c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-0": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Earn an all inclusive trip for 2!",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Xendurance TEAM XND members have the ability to earn a FREE three night stay for two! <\/p><p>This year we are going back to Mexico!! The beautiful land with high mountains and deep canyons in the center of the country, sweeping deserts in the north, and dense rain forests in the south and east.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-0",
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-1",
+        "template--16054074540220__4872f2ee-ee86-402b-a966-8c23b0f7ae3c-1687494298becafc85-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "a8b80e17-7b13-4751-a3e0-089e8640d700": {
+      "type": "slideshow",
+      "blocks": {
+        "27a67bd1-f8fc-469c-b2b5-265db33a1243": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day5-39-16x9.jpg",
+            "content_max_width": 1080,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "2a3c1f17-df78-4b90-8da4-ca0311d5f62a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day3-126-16x9.jpg",
+            "content_max_width": 1080,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "26a12b2c-c8cd-4132-a613-1e786bb3dc88": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day4-30-16x9.jpg",
+            "content_max_width": 1080,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "3a506f46-7fdd-4b2a-b476-511b7737297a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day3-3-16x9.jpg",
+            "content_max_width": 1080,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--16054543220924__a8b80e17-7b13-4751-a3e0-089e8640d700-16875003928dcba238-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day5-51-16x9.jpg",
+            "content_max_width": 1080,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "button_link_members": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "27a67bd1-f8fc-469c-b2b5-265db33a1243",
+        "2a3c1f17-df78-4b90-8da4-ca0311d5f62a",
+        "26a12b2c-c8cd-4132-a613-1e786bb3dc88",
+        "3a506f46-7fdd-4b2a-b476-511b7737297a",
+        "template--16054543220924__a8b80e17-7b13-4751-a3e0-089e8640d700-16875003928dcba238-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "#f5f5f5",
+        "background_gradient": ""
+      }
+    },
+    "1284832e-4ff2-46b3-8365-2765229b44f4": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "text": "LETS GO, MEXICO.",
+        "text_size": "medium",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "#e93b40",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
+    "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "1. Personal & Team Rank Advancements",
+            "heading_tag": "h4",
+            "content": "<p>First time retail customer and Team XND orders from 6\/2\/2023 - 6\/1\/2024 completed on your Level 1 will earn you Vcoins toward the Victory Trip. 1 product volume point = 1 Vcoins!<\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "2. New Sales Volume (over 6 months!)",
+            "heading_tag": "h4",
+            "content": "<p>First time retail customer and Team XND orders from 6\/2\/2023 - 6\/1\/2024 completed on your Level 1 will earn you Vcoins toward the Victory Trip. 1 product volume point = 1 Vcoins!<\/p>",
+            "link_url": "",
+            "link_url_members": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0",
+        "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "You Go. I Go. We Go!",
+        "content": "<p>To qualify for this Victory Trip, the Team XND Member will be required To earn <strong>10,000 <\/strong>Vcoins from 6\/2\/2023 - 6\/1\/2024. This is half the requirement of previous trips!!<\/p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "d7111657-9c36-448d-becf-d28f96906290": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "36a0eae5-0cdc-429d-a193-efadb420b2cd": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "53a435b5-752d-4728-91f6-289fa85aca04": {
+          "type": "heading",
+          "settings": {
+            "text": "You Go. I Go. We Go!",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "71355445-c0e5-4e3c-a3e5-78872b134479": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>To qualify for this Victory Trip, the Team XND Member will be required To earn <strong>10,000 <\/strong>Vcoins from 6\/2\/2023 - 6\/1\/2024. This is half the requirement of previous trips!!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "36a0eae5-0cdc-429d-a193-efadb420b2cd",
+        "53a435b5-752d-4728-91f6-289fa85aca04",
+        "71355445-c0e5-4e3c-a3e5-78872b134479"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66": {
+      "type": "media-with-text",
+      "disabled": true,
+      "blocks": {
+        "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
+          "type": "image",
+          "settings": {
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 96,
+            "subheading": "",
+            "title": "1. Personal & Team Rank Advancements",
+            "content": "<p>Each personal and Level 1 Team Member rank advancement that is maintained for 2 out of 11 months earns you and that Team Member 2,500 Vcoins.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
+          "type": "image",
+          "settings": {
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "2. New Sales Volume (over 6 months!)",
+            "content": "<p>First time retail customer and Team XND orders from 6\/2\/2023 - 6\/1\/2024 completed on your Level 1 will earn you Vcoins toward the Victory Trip. 1 product volume point = 1 Vcoins!<\/p>",
+            "link_text": "",
+            "link_url": "https:\/\/chrome-extension\/\/efaidnbmnnnibpcajpcglclefindmkaj\/https:\/\/cdn.shopify.com\/s\/files\/1\/0574\/3450\/5404\/files\/EE_Challenge-Workouts-2.pdf?v=1643835918",
+            "background": "#f5f5f5",
+            "background_gradient": "",
+            "text_color": "#353435",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "2c0e237f-c1cc-4eb8-b43b-addc715943d2",
+        "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "0d8800aa-9c42-40d6-b630-28e4885a4d3f": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "text": "Why You Should Become a Team XND Member",
+        "text_size": "medium",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#e93b40",
+        "text_gradient": ""
+      }
+    },
+    "6ae6922e-7b13-4fd4-8a1f-5a684c04e323": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-0": {
+          "type": "item",
+          "settings": {
+            "title": "How do I qualify for the trip?",
+            "content": "<p>Team Members may contribute $0.20 per each remaining Vcoin to qualify for the Victory Trip & Travel Credits<\/p>"
+          }
+        },
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1": {
+          "type": "item",
+          "settings": {
+            "title": "Can you explain how the Rank Advancement Vcoins work?",
+            "content": "<p>Vcoins are awarded after the 2nd month of maintaining that rank. A maximum of 1,000 PV per rank advancement period is allowed.<\/p>"
+          }
+        },
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can you explain how the New Volume Vcoins works?",
+            "content": "<p>Ex: New Team Member places an order worth 100 points and for the following 5 months, you will earn 1200 Vcoins toward the trip.<\/p>"
+          }
+        },
+        "795cb8e4-7e18-40df-83ca-31944929a21f": {
+          "type": "item",
+          "settings": {
+            "title": "If I only partially qualify, can I buy my remaining way?",
+            "content": "<p>Yes, you can buy your remaining Vcoins for $0.20\/Vcoin. At the end of the qualification period we will reach out to those who have partially qualified.<\/p>"
+          }
+        },
+        "14cd019f-a7d0-46cc-bd7b-c17b67d7f58a": {
+          "type": "item",
+          "settings": {
+            "title": "Is airfare and transportation included?",
+            "content": "<p>Airfare is not covered on the XND Victory Trip. Travel specifications will be posted to those who qualify. Those earning an additional 5,000 & 10,000 Vcoins past the 10,000 required for the Victory Trip will recieve $500 and $1,000, respectively, in the form of a non-taxable payout in their July commissions. Transportation will be covered but In the event you decide to arrive early or extend your stay, you will be responsible for any additional fees or transportation.<\/p>"
+          }
+        },
+        "b16c61cf-f824-4ce6-afa5-6438a9081da1": {
+          "type": "item",
+          "settings": {
+            "title": "Are all meals and drinks included? What about the unlimited excursions?",
+            "content": "<p>All meals and drinks within the trip agenda are included. You are responsible for meals not listed on the agenda.<\/p>"
+          }
+        },
+        "97744278-f748-4745-9793-ff39974c7f29": {
+          "type": "item",
+          "settings": {
+            "title": "If my passport is due to expire within six months of the trip, do I need to renew it?",
+            "content": "<p>Yes!<\/p>"
+          }
+        },
+        "ec5d56c7-5aad-4347-a898-a7b3f3e444a5": {
+          "type": "item",
+          "settings": {
+            "title": "If I qualify for a ticket but I cannot attend, can I transfer it to another person?",
+            "content": "<p>New Volume Vcoins will be deducted from your purchase if personally enrolled customers or Team Members return product. XND Ship is also non-refundable.<\/p>"
+          }
+        },
+        "d5ba59c4-2fb9-41f5-ae7c-b2702373cf6b": {
+          "type": "item",
+          "settings": {
+            "title": "Can Vcoins carryover to future trips?",
+            "content": "<p>Unfortunately, Vcoins earned during the current qualification period do not carry over.<\/p>"
+          }
+        },
+        "32f07015-8f34-4181-b3a4-a5eb3410e2bf": {
+          "type": "item",
+          "settings": {
+            "title": "Okay, what legal stuff do you need to tell us?",
+            "content": "<p>Xendurance LLC (Xendurance) reserves the right to interpret these rules and, if necessary, to amend the rules. Xendurance can identify unethical behaviours in the pursuit of earning this trip and can act at will. Any amendments to the rules or changes in prizes will be published online here.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-0",
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-1",
+        "template--16053542715580__6ae6922e-7b13-4fd4-8a1f-5a684c04e323-1687327305a2fe9d9d-2",
+        "795cb8e4-7e18-40df-83ca-31944929a21f",
+        "14cd019f-a7d0-46cc-bd7b-c17b67d7f58a",
+        "b16c61cf-f824-4ce6-afa5-6438a9081da1",
+        "97744278-f748-4745-9793-ff39974c7f29",
+        "ec5d56c7-5aad-4347-a898-a7b3f3e444a5",
+        "d5ba59c4-2fb9-41f5-ae7c-b2702373cf6b",
+        "32f07015-8f34-4181-b3a4-a5eb3410e2bf"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "The Ins and Outs",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "#e93b40",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": "#050505"
+      }
+    },
+    "2828a754-4b02-4ea0-b3ba-187eae4a7b82": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "show_icon": false,
+        "title": "Get The Latest From Xendurance",
+        "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
+        "button_text": "Subscribe",
+        "subtext": "",
+        "background": "#353435",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "060504f5-2e44-4a39-aac4-9ef0b0cfb5b0",
+    "4872f2ee-ee86-402b-a966-8c23b0f7ae3c",
+    "main",
+    "a8b80e17-7b13-4751-a3e0-089e8640d700",
+    "1284832e-4ff2-46b3-8365-2765229b44f4",
+    "9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac",
+    "d7111657-9c36-448d-becf-d28f96906290",
+    "101ee25b-89f4-4386-82b3-fe92ae53ba66",
+    "0d8800aa-9c42-40d6-b630-28e4885a4d3f",
+    "6ae6922e-7b13-4fd4-8a1f-5a684c04e323",
+    "2828a754-4b02-4ea0-b3ba-187eae4a7b82"
+  ]
+}

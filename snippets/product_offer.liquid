@@ -1,0 +1,85 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+OFFER COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to create banner (for instance to showing an error, an info, or to show promotion content). Because
+there are a lot of parameters, you simply need to pass the "block" object and everything will be extracted from it.
+
+********************************************
+Supported variables
+********************************************
+
+* title: an optional title for the banner
+* content: the textual content to use
+* icon: the name of an icon that is optionally added along the text
+* icon_width: the width of the icon
+* custom_icon: an image of an optional icon (if any)
+* icon_position: the position of the icon. Accept the values "aligned" or "stacked".
+* text_alignment: alignment of the text
+* background: an optional background that would override existing color
+* text_color: an optional text color that would override existing color
+{%- endcomment -%}
+<div class="product-offer-main">
+{%- capture offer_class -%}offer {% if block.settings.text_alignment == 'center' %}offer--center{% endif %}{%- endcapture -%}
+
+<div {% render 'surface', class: offer_class, background: block.settings.background, text_color: block.settings.text_color, background_fallback: 'bg-secondary' %} {{ block.shopify_attributes }}>
+  {%- capture icon_with_title -%}
+    {%- if block.settings.custom_icon != blank -%}
+      {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+      {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
+      {%- capture style -%}max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
+      {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: 'lazy', style: style, sizes: sizes, widths: widths -}}
+    {%- elsif block.settings.icon != 'none' -%}
+      {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width -%}
+    {%- endif -%}
+
+    {%- if block.settings.title != blank -%}
+      <span class="bold text-sm">
+      {% render 'marker-text', heading: block.settings.title %}
+      </span>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- if icon_with_title != blank -%}
+    {%- if block.settings.icon_position == 'aligned' -%}
+      <div class="text-with-icon">
+        {{- icon_with_title -}}
+      </div>
+    {%- else -%}
+      {{- icon_with_title -}}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if block.settings.content != blank -%}
+    <div class="prose text-sm">
+      {{- block.settings.content -}}
+    </div>
+  {%- endif -%}
+
+  {%- if block.settings.product != blank -%}
+    <div class="product-info__buy-buttons">
+{%- form 'product', block.settings.product, is: 'quick-product-form' -%}
+  <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ block.settings.product.selected_or_first_available_variant.id }}">
+  <input type="hidden" name="selling_plan" value="4565696700">
+  {%- assign button_disabled = false -%}
+  {%- assign button_size = button_size | default: 'xl' -%}
+
+  {%- if product.selected_or_first_available_variant.available -%}
+    {%- if product.template_suffix contains 'pre-order' -%}
+      {%- capture button_content -%}{{ 'product.general.pre_order_button' | t }}{%- endcapture -%}
+    {%- else -%}
+      {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{block.settings.product.selected_or_first_available_variant.price | money}}{%- endcapture -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+    {%- assign button_disabled = true -%}
+  {%- endif -%}
+    <buy-buttons class="buy-buttons {% if show_payment_button %}buy-buttons--multiple{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
+      {%- render 'button', content: button_content, type: 'submit', size: button_size, disabled: button_disabled, secondary: show_payment_button, subdued: button_disabled, background: atc_button_background, text_color: atc_button_text_color -%}
+    </buy-buttons>
+  {%- endform -%} 
+  {%endif%}
+</div>
+</div>
+</div>
