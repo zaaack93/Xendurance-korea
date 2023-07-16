@@ -8,27 +8,9 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
 {%- endcomment -%}
 
 <!doctype html>
+
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
-
-<script type="text/javascript">
-!function(){var geq=window.geq=window.geq||[];if(geq.initialize) return;if (geq.invoked){if (window.console && console.error) {console.error("GE snippet included twice.");}return;}geq.invoked = true;geq.methods = ["page", "suppress", "trackOrder", "identify", "addToCart", "callBack", "event"];geq.factory = function(method){return function(){var args = Array.prototype.slice.call(arguments);args.unshift(method);geq.push(args);return geq;};};for (var i = 0; i < geq.methods.length; i++) {var key = geq.methods[i];geq[key] = geq.factory(key);}geq.load = function(key){var script = document.createElement("script");script.type = "text/javascript";script.async = true;if (location.href.includes("vge=true")) {script.src = "https://s3-us-west-2.amazonaws.com/jsstore/a/" + key + "/ge.js?v=" + Math.random();} else {script.src = "https://s3-us-west-2.amazonaws.com/jsstore/a/" + key + "/ge.js";}var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};geq.SNIPPET_VERSION = "1.6.1";
-geq.load("X2JHYVR");}();
-</script>
-<script>geq.page()</script>
-
-<script>
-window.addEventListener("klaviyoForms", function(e) {
-if (e.detail.type == 'submit') {
-geq.suppress();
-}
-});
-</script>
-
-
   <head>
-<!-- Begin: Northbeam pixel -->
-<script>var r;(n=r=r||{}).A="identify",n.B="trackPageView",n.C="fireEmailCaptureEvent",n.D="fireCustomGoal",n.E="firePurchaseEvent";var n="//j.northbeam.io/ota-sp/c08849e8-6d5f-48f4-a21a-d90aaa6fb072.js";function t(n){for(var e=[],r=1;r<arguments.length;r++)e[r-1]=arguments[r];a.push({fnName:n,args:e})}var a=[],e=((e={_q:a})[r.A]=function(n,e){return t(r.A,n,e)},e[r.B]=function(){return t(r.B)},e[r.C]=function(n,e){return t(r.C,n,e)},e[r.D]=function(n,e){return t(r.D,n,e)},e[r.E]=function(n){return t(r.E,n)},window.Northbeam=e,document.createElement("script"));e.async=!0,e.src=n,document.head.appendChild(e);</script>
-<!-- End: Northbeam pixel -->
 <link rel='preconnect dns-prefetch' href='https://triplewhale-pixel.web.app/' crossorigin />
 <link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
 <script>
