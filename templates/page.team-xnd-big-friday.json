@@ -395,6 +395,17 @@
     },
     "168792061600bca8d9": {
       "type": "apps",
+      "blocks": {
+        "f6c8559d-e25f-4481-b876-955fcb38fcd7": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "V7YSgZ"
+          }
+        }
+      },
+      "block_order": [
+        "f6c8559d-e25f-4481-b876-955fcb38fcd7"
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
