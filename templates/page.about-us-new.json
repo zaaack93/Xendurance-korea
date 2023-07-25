@@ -118,6 +118,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -215,6 +216,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -253,7 +255,6 @@
         "video_size": "auto",
         "external_video_url_metafield": "",
         "external_video_url": "https:\/\/www.youtube.com\/watch?time_continue=1&v=6UBKnfeH6Ps&embeds_referring_euri=https%3A%2F%2Fxendurance.com%2F&source_ve_path=NzY3NTg&feature=emb_yt_watermark",
-        "poster": "shopify:\/\/shop_images\/Screen_Shot_2023-06-22_at_1.48.19_pm.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 20
@@ -305,6 +306,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },

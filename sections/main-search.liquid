@@ -141,7 +141,13 @@
                     {%- assign product_results = search.results | where: 'object_type', 'product' -%}
 
                     {%- for product in product_results -%}
-                      {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                      {% if isMember == false and product.tags contains 'ALL-PRODUCTS' %}
+                        {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                      {%elsif isMember == false and product.tags contains 'RETAIL' %}
+                        {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                      {%elsif isMember and product.tags contains 'MEMBERS-ONLY' %}
+                        {%- render 'product-card', product: product, stacked: true, show_badges: true -%}
+                      {% endif %}
                     {%- endfor -%}
                   </product-list>
                 </reveal-items>

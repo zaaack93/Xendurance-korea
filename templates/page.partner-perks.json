@@ -146,7 +146,7 @@
         "e863fac3-4cf1-481c-bd7c-f02ecf229d22": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Logo-Friction-Labs.jpg",
+            "image": "shopify:\/\/shop_images\/Logo-Friction-Labs_1.jpg",
             "column_size": "3",
             "title": "FrictionLabs®",
             "heading_tag": "h4",
@@ -865,7 +865,6 @@
         "2c0e237f-c1cc-4eb8-b43b-addc715943d2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_XND_1.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -887,7 +886,6 @@
         "template--16030540628156__101ee25b-89f4-4386-82b3-fe92ae53ba66-16868779614068d847-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_XND_2.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -909,7 +907,6 @@
         "fa984ecd-b779-444a-8dac-de7dfeefa851": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_XND_4.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -931,7 +928,6 @@
         "cfadcff4-8a13-420a-86b6-171b6ebbe2fd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_XND_3.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -959,6 +955,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -993,6 +990,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -1124,7 +1122,6 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1138,7 +1135,6 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1152,7 +1148,6 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_8797bc42-1b1c-4f3b-81f0-a705c07edba9.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1166,7 +1161,6 @@
         "31964891-9d59-40d3-808e-3d3576f5c4b4": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8_0c25e210-9c41-466a-b601-e199a4b1074d.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1180,7 +1174,6 @@
         "2fa3cb45-b179-4ca6-936e-32dd64424239": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/11.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1194,7 +1187,6 @@
         "0c676a14-2ca9-4a69-a721-95d80367b50e": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9_89e0ddb0-ea50-4f69-b214-5eb9677c17e7.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1208,7 +1200,6 @@
         "72239445-43b1-423f-a512-76a40b6cf24a": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_9d2def39-f564-4d37-b64c-5ac28a55776b.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1222,7 +1213,6 @@
         "ceeee60d-b7ed-45c5-9ef3-a7e6edcad6e5": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/12.jpg",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -1265,7 +1255,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/1-1643686487072.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
@@ -1279,7 +1268,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/2-1643686487074_Large_6871f92a-e3fd-4d14-acfc-7e8942840bca.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
@@ -1293,7 +1281,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/3-1643686487076_Large_445ce96f-663a-466c-90ea-35bd35ae836c.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
@@ -1669,6 +1656,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -1679,7 +1667,6 @@
         "7e68ab9d-9712-446f-b8f8-7eb1818a43a0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/xnd-punta-cana-day3-3-16x9.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -1704,6 +1691,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -1793,7 +1781,6 @@
       "disabled": true,
       "settings": {
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "show_icon": false,
         "title": "Get The Latest From Xendurance",
         "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",

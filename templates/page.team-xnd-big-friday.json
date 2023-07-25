@@ -7,7 +7,6 @@
         "template--16054543515836__317f8e6a-3ca3-4df0-8ded-343a8922ea86-16880031849ea33a45-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XND-Web_Banner-Athlete_Collage-Desk_1_276809f0-c614-4419-ad93-e5d8825e49e0.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -32,6 +31,7 @@
       ],
       "settings": {
         "full_width": true,
+        "hide_for_members": false,
         "spacing": "none"
       }
     },
@@ -42,7 +42,6 @@
         "template--16054543515836__c6f89ea7-4894-442c-96b2-fad1608cda7d-168800243002f378df-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XND-Web_Banner-Athlete_Collage-Desk_1-BW.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -64,7 +63,6 @@
         "template--16054543515836__c6f89ea7-4894-442c-96b2-fad1608cda7d-168800243002f378df-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XND-Web_Banner-Athlete_Collage-Desk_1_10710c55-a3e8-4d31-aa75-468d99367319.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -96,7 +94,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
@@ -274,7 +272,6 @@
         "511dc69e-632c-4483-b161-4abaff4b85ff": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BIG_FRIDAY___Hayley_Manners_-_IG_Story-EDIT.jpg",
             "column_size": "3",
             "title": "Hayley Manners",
             "heading_tag": "h4",
@@ -288,7 +285,6 @@
         "75b4055d-0beb-4340-bd4d-765711554a69": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BIG_FRIDAY_PaigeWoodall_IG_Story-EDIT.jpg",
             "column_size": "3",
             "title": "Paige Woodall",
             "heading_tag": "h4",
@@ -302,7 +298,6 @@
         "45825ab2-1a50-4fa8-93fa-461783b2e370": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BIG_FRIDAY___Nathan_Harpster_-_IG_Story-EDIT.jpg",
             "column_size": "3",
             "title": "Nathan Harpster",
             "heading_tag": "h4",
@@ -378,6 +373,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -395,17 +391,6 @@
     },
     "168792061600bca8d9": {
       "type": "apps",
-      "blocks": {
-        "f6c8559d-e25f-4481-b876-955fcb38fcd7": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "V7YSgZ"
-          }
-        }
-      },
-      "block_order": [
-        "f6c8559d-e25f-4481-b876-955fcb38fcd7"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -425,7 +410,6 @@
       "disabled": true,
       "settings": {
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "show_icon": false,
         "title": "Replace with",
         "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts.<\/p>",

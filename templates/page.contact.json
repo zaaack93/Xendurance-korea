@@ -77,7 +77,7 @@
         "template--16030540562620__7e97da11-e4fd-4914-bfe3-6c4f3711b54d-16878681235929d6a4-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_154cd3a6-cde1-433e-91ab-04aef726743c.png",
+            "image": "shopify:\/\/shop_images\/4_3a645ed1-666c-4714-9f2e-e116bbbfed7e.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -102,6 +102,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -139,9 +140,9 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#ffffff",
+        "background": "#353435",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "contact": {

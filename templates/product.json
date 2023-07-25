@@ -3,27 +3,33 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
           }
         },
-        "e00585ce-7192-4586-9567-a2c4bafdd045": {
-          "type": "price_smartrr",
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "badges": {
+          "type": "badges",
           "settings": {
           }
         },
-        "3780c535-8911-4fe4-8d1f-605124beb58c": {
-          "type": "text",
+        "price": {
+          "type": "price",
           "settings": {
-            "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>"
-          }
-        },
-        "8d21c681-30df-4742-8a3a-4317b834ba98": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.product_key_benefit | metafield_tag }}"
+            "show_taxes_notice": false
           }
         },
         "variant_picker": {
@@ -36,29 +42,47 @@
             "size_chart_page": ""
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
         "607f9e51-9129-4c62-b3f5-158106b03c22": {
           "type": "shopify:\/\/apps\/smartrr\/blocks\/app-block\/feefa72b-d730-4320-ae1b-95af6a0c861e",
           "settings": {
             "group_select": "pills",
             "group_border": 1,
-            "group_border_radius": 10,
+            "group_border_radius": 8,
             "group_primary_background": "#ffffff",
-            "group_primary_text_color": "#1a1a1a",
-            "group_border_color": "#e93b40",
+            "group_primary_text_color": "#202223",
+            "group_border_color": "#202223",
             "show_otp": true,
             "otp_default": true,
             "show_prices": true,
-            "plan_select": "pills",
+            "plan_select": "dropdown",
             "plan_border": 1,
             "plan_border_radius": 8,
-            "show_label": false,
+            "show_label": true,
             "plan_primary_background": "#ffffff",
             "plan_primary_text_color": "#202223",
             "plan_border_color": "#202223",
             "custom_css": ""
           }
         },
-        "3cbe7afa-04db-4038-8417-654d1167e569": {
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "840f575c-a799-4dd9-b08c-8e79ffa65e58": {
           "type": "buy_buttons_quantite",
           "settings": {
             "show_payment_button": false,
@@ -69,17 +93,6 @@
             "payment_button_text_color": ""
           }
         },
-        "ff481666-34da-4089-ad31-cb03d9ffc893": {
-          "type": "icon_with_text",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/mdi_shield-tick.png",
-            "icon_size1": 30,
-            "title1": "Money Back Guarantee",
-            "image2": "shopify:\/\/shop_images\/mdi_truck-delivery.png",
-            "icon_size2": 35,
-            "title12": "Same Day Shipping"
-          }
-        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {
@@ -87,21 +100,18 @@
         },
         "separator": {
           "type": "separator",
-          "disabled": true,
           "settings": {
           }
         },
-        "cd6ba36a-48e1-40f2-a783-9541c8adc725": {
-          "type": "product_offer",
+        "d6e7cc69-7a8b-4051-b445-8b711ed9e361": {
+          "type": "offer",
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
-            "icon_width": 72,
-            "title": "Become a Member & |Save 25% OFF|",
-            "content": "<p>Purchase a Team XND Membership and receive:<\/p><ul><li> 25% Off Sitewide<\/li><li>$100 Worth of Product Rewards  <\/li><li>Free US Shipping.<\/li><li>No Order Minimums.  Exclusive Partner Perks<\/li><\/ul>",
-            "product": "team-xnd-membership",
+            "icon_width": 80,
+            "title": "Become a Member & Save 25%",
+            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
             "background": "#353435",
             "text_color": "#ffffff"
           }
@@ -116,45 +126,58 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Key Benefits",
-            "content": "<p>{{ product.metafields.custom.key_benefits | metafield_tag }}<\/p>"
+            "content": "<p>Share some content to your customers about your products.<\/p>"
           }
         },
         "b833a344-c331-427c-9113-de7b76a2738c": {
           "type": "collapsible_text",
           "settings": {
             "title": "What's Inside",
-            "content": "{{ product.metafields.custom.key_ingredients | metafield_tag }}"
+            "content": "<p>Share some content to your customers about your products.<\/p>"
           }
         },
         "ebb6b23d-4582-4ee7-b484-aa7711332c3f": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Usage",
-            "content": "{{ product.metafields.custom.consumption | metafield_tag }}"
+            "title": "When to Consume",
+            "content": "<p>Share some content to your customers about your products.<\/p>"
+          }
+        },
+        "f6277ae5-3a7d-4dea-9c23-52c21e5e270e": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 2,
+            "background": "",
+            "text_color": ""
           }
         }
       },
       "block_order": [
+        "vendor",
         "title",
-        "e00585ce-7192-4586-9567-a2c4bafdd045",
-        "3780c535-8911-4fe4-8d1f-605124beb58c",
-        "8d21c681-30df-4742-8a3a-4317b834ba98",
+        "rating",
+        "badges",
+        "price",
         "variant_picker",
+        "quantity_selector",
         "607f9e51-9129-4c62-b3f5-158106b03c22",
-        "3cbe7afa-04db-4038-8417-654d1167e569",
-        "ff481666-34da-4089-ad31-cb03d9ffc893",
+        "buy_buttons",
+        "840f575c-a799-4dd9-b08c-8e79ffa65e58",
         "payment_terms",
         "separator",
-        "cd6ba36a-48e1-40f2-a783-9541c8adc725",
+        "d6e7cc69-7a8b-4051-b445-8b711ed9e361",
         "description",
         "9a72e9ef-1e05-4816-9035-41a075bdf809",
         "b833a344-c331-427c-9113-de7b76a2738c",
-        "ebb6b23d-4582-4ee7-b484-aa7711332c3f"
+        "ebb6b23d-4582-4ee7-b484-aa7711332c3f",
+        "f6277ae5-3a7d-4dea-9c23-52c21e5e270e"
       ],
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,
-        "desktop_media_width": 50,
+        "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
@@ -169,186 +192,17 @@
         "input_text_color": ""
       }
     },
-    "30d03795-8f63-485e-b581-13a9457eafe7": {
-      "type": "scrolling-text",
-      "settings": {
-        "full_width": true,
-        "text": "{{ product.metafields.custom.scrolling_text_product_tagline.value }}",
-        "text_size": "small",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "#353435",
-        "text_gradient": ""
-      }
-    },
-    "bcaba574-df57-48cf-807f-7d37103cb89b": {
-      "type": "video",
-      "blocks": {
-        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-0": {
-          "type": "play",
-          "settings": {
-          }
-        },
-        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "The XND X-Factor",
-            "heading_tag": "h1"
-          }
-        },
-        "d4298b0d-8e4b-4fcc-8d79-e0d6a17898e4": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-0",
-        "template--16030540726460__bcaba574-df57-48cf-807f-7d37103cb89b-1686874698486797f9-1",
-        "d4298b0d-8e4b-4fcc-8d79-e0d6a17898e4"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "external_video_url_metafield": "{{ product.metafields.custom.product_video_url.value }}",
-        "external_video_url": "",
-        "poster": "{{ product.metafields.custom.product_poster.value }}",
-        "text_color": "#f5f5f5",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "808ce943-d064-4ee0-9d4c-5381ae09074f": {
-      "type": "multi-column",
-      "blocks": {
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom.pdp_athlete_1.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom.pdp_athlete_name_1.value }}",
-            "heading_tag": "h4",
-            "content": "<p>{{ product.metafields.custom.pdp_athlete_testimonial_1 | metafield_tag }}<\/p>",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom.pdp_athlete_2.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom.pdp_athlete_name_2.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_2 | metafield_tag }}",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom.pdp_athlete_3.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom.pdp_athlete_name_3.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.pdp_athlete_testimonial_3 | metafield_tag }}",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-0",
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-1",
-        "template--16030540726460__808ce943-d064-4ee0-9d4c-5381ae09074f-16868199149f11feb4-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "stack_on_mobile": false,
-        "gap": "large",
-        "text_alignment": "start",
-        "subheading": "{{ product.metafields.custom.pdp_testimonial_section_subheading.value }}",
-        "title": "{{ product.metafields.custom.pdp_testimonial_section_heading.value }}",
-        "content": "{{ product.metafields.custom.pdp_testimonial_section_body | metafield_tag }}",
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
-        "text_color": "#1a1a1a"
-      }
-    },
-    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8": {
+    "68a708f8-db9e-4e92-a006-62d63511bee1": {
       "type": "feature-chart-v2",
-      "blocks": {
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "BENEFITS",
-            "heading_2": "XND",
-            "heading_3": "OTHERS"
-          }
-        },
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_1 | metafield_tag }}<\/p>"
-          }
-        },
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_2 | metafield_tag }}<\/p>"
-          }
-        },
-        "83dae4f6-d04e-41cf-8a73-16e29fd223cb": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_3 | metafield_tag }}<\/p>"
-          }
-        },
-        "1f472494-3519-4471-80df-fac33a032617": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_4 | metafield_tag }}<\/p>"
-          }
-        },
-        "346c4aba-459b-44bc-aa23-86ae7be08e96": {
-          "type": "values",
-          "settings": {
-            "value": "<p>{{ product.metafields.custom.comp_chart_line_5 | metafield_tag }}<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-0",
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-1",
-        "template--16030540726460__752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8-1687898568d92e252d-2",
-        "83dae4f6-d04e-41cf-8a73-16e29fd223cb",
-        "1f472494-3519-4471-80df-fac33a032617",
-        "346c4aba-459b-44bc-aa23-86ae7be08e96"
-      ],
       "settings": {
         "full_width": true,
-        "subheading": "",
-        "title": "{{ product.metafields.custom.comp_chart_heading.value }}",
-        "content": "<p>{{ product.metafields.custom.comp_chart_sub_heading | metafield_tag }}<\/p>",
+        "subheading": "Compare",
+        "title": "Product specification",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
         "button_text": "",
         "button_url": "",
         "button_url_members": "",
-        "text_position": "center",
+        "text_position": "start",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -358,391 +212,20 @@
         "button_text_color": ""
       }
     },
-    "b5bae039-0209-417a-9002-2d5904e516f8": {
-      "type": "accordion-content",
-      "blocks": {
-        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-0": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_1.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_1 | metafield_tag }}"
-          }
-        },
-        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-1": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_2.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_2 | metafield_tag }}"
-          }
-        },
-        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-2": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_3.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_3 | metafield_tag }}"
-          }
-        },
-        "3a055e44-0985-4287-b5ba-d30a703ed0da": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_4.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_4 | metafield_tag }}"
-          }
-        },
-        "2645c719-7e83-405b-b7ae-02ffb2430c11": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_5.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_5 | metafield_tag }}"
-          }
-        },
-        "88211187-4dd7-4ab2-b0e2-78f4d5dce849": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_6.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_6 | metafield_tag }}"
-          }
-        },
-        "fc772d0c-cea9-4e65-9955-933fd6d64b0f": {
-          "type": "item",
-          "settings": {
-            "title": "{{ product.metafields.custom.pdp_question_7.value }}",
-            "content": "{{ product.metafields.custom.pdp_answer_7 | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-0",
-        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-1",
-        "template--16030540726460__b5bae039-0209-417a-9002-2d5904e516f8-1686818602a6b8ae47-2",
-        "3a055e44-0985-4287-b5ba-d30a703ed0da",
-        "2645c719-7e83-405b-b7ae-02ffb2430c11",
-        "88211187-4dd7-4ab2-b0e2-78f4d5dce849",
-        "fc772d0c-cea9-4e65-9955-933fd6d64b0f"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "{{ product.metafields.custom.faq_subtitle.value }}",
-        "title": "{{ product.metafields.custom.faq_title.value }}",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "#353435",
-        "accordion_text_color": "#ffffff"
-      }
-    },
-    "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--16030540726460__c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c-16868891644e92fc9b-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Optimal Results",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c-16868891644e92fc9b-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "2a0ceef1-a819-4f7d-abc3-691d2dac0a8a": {
-      "type": "media-grid",
-      "disabled": true,
-      "blocks": {
-        "template--16030540726460__2a0ceef1-a819-4f7d-abc3-691d2dac0a8a-16868887419509b226-2": {
-          "type": "image",
-          "settings": {
-            "title": "Morning",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "Take 3 Tablets Of Extreme Endurance with or without food first thing in the morning",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#00a9dd",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#00a9dd",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "85823df1-6ee8-48e0-b6f7-b4eb181a009e": {
-          "type": "image",
-          "settings": {
-            "title": "Evening",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_url_members": "",
-            "link_text": "Take 3 Tablets Of Extreme Endurance with or without food before bed",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#f83a3a",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#f83a3a",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__2a0ceef1-a819-4f7d-abc3-691d2dac0a8a-16868887419509b226-2",
-        "85823df1-6ee8-48e0-b6f7-b4eb181a009e"
-      ],
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 230,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
-    "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d": {
-      "type": "feature-chart",
-      "disabled": true,
-      "blocks": {
-        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-0": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Heading 1",
-            "heading_2": "Heading 2",
-            "heading_3": "Heading 3",
-            "heading_4": "Heading 4",
-            "heading_5": "",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-1": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>Yes<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>No<\/p>",
-            "value_4": "<p>No<\/p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-2": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>No<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>Yes<\/p>",
-            "value_4": "<p>No<\/p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "#ffffff",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-0",
-        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-1",
-        "template--16030540726460__a90b6c23-bec7-4fb1-b3fe-60bcce828c4d-1686889510ad50e190-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Xendurance vs the Competition ",
-        "content": "<p>When it’s time to unleash your inner-Hercules and bounce back stronger than ever… Its very hard to beat the results you will feel with Extreme Endurance.<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "button_url_members": "",
-        "text_position": "center",
-        "max_rows": 5,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "viewing_product": "",
-        "show_product_swatch": true,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
-    "16868735100eb8db37": {
-      "type": "apps",
-      "blocks": {
-        "ac1aad6e-0494-43e6-a5a6-e20655a87179": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "ac1aad6e-0494-43e6-a5a6-e20655a87179"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
-    "0a1f82a6-b53d-4501-9a94-2860da5741ce": {
-      "type": "media-with-text",
-      "blocks": {
-        "3e31e3c1-0def-48dd-9655-fe42742306f4": {
-          "type": "video",
-          "settings": {
-            "external_video_url": "https:\/\/www.youtube.com\/watch?v=VKhd6m_axdE&t=59s",
-            "poster_image": "shopify:\/\/shop_images\/Screen_Shot_2023-06-06_at_11.06.57_am.png",
-            "autoplay": false,
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Join Team XND & Save",
-            "content": "<ul><li>$100 in Immediate Rewards. <\/li><li>Free Shipping + 25% OFF On Every Order. <\/li><li>2x Loyalty Points. <\/li><li>Partner Perks + More.<\/li><\/ul>",
-            "link_text": "Learn More",
-            "link_url": "shopify:\/\/pages\/team-xnd-signup",
-            "link_url_members": "",
-            "background": "#353435",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#e93a3f",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "3e31e3c1-0def-48dd-9655-fe42742306f4"
-      ],
-      "settings": {
-        "full_width": false,
-        "hide_for_members": true,
-        "spacing": "small"
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "recommendations_count": 4,
-        "products": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "recommendations_count": 6,
+        "products": [
+
+        ],
         "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": true,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Often Bought With",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1": {
-      "type": "recently-viewed-products",
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "products_count": 6,
         "stack_products": true,
         "show_progress_bar": false,
         "products_per_row_mobile": "1",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Recently viewed products",
+        "title": "You may also like",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -756,17 +239,7 @@
   },
   "order": [
     "main",
-    "30d03795-8f63-485e-b581-13a9457eafe7",
-    "bcaba574-df57-48cf-807f-7d37103cb89b",
-    "808ce943-d064-4ee0-9d4c-5381ae09074f",
-    "752d8c1b-5d96-44cd-b3d7-1cb03b04c5b8",
-    "b5bae039-0209-417a-9002-2d5904e516f8",
-    "c9caa17f-97c9-4fe3-b7bf-0d3b9124d73c",
-    "2a0ceef1-a819-4f7d-abc3-691d2dac0a8a",
-    "a90b6c23-bec7-4fb1-b3fe-60bcce828c4d",
-    "16868735100eb8db37",
-    "0a1f82a6-b53d-4501-9a94-2860da5741ce",
-    "related-products",
-    "cf8b928d-f9b0-4c53-bcbb-2f59458566b1"
+    "68a708f8-db9e-4e92-a006-62d63511bee1",
+    "related-products"
   ]
 }

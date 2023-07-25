@@ -1,24 +1,5 @@
-{%- comment -%}
-----------------------------------------------------------------------------------------------------------------------
-HORIZONTAL PRODUCT COMPONENT
-----------------------------------------------------------------------------------------------------------------------
-
-This component is used in product page, blog page or collection to highlight small product
-
-********************************************
-Supported variables
-********************************************
-
-* product: the product to render
-* size: can be "sm" or nothing
-* show_add_to_cart: a boolean indicating if we show the add to cart
-* background: an optional background color for the tile
-* text_color: an optional text color for the tile
-* output_link: if set to false, the link around the link is not set
-{%- endcomment -%}
-
 {%- capture class -%}horizontal-product {% if size == 'sm' %}horizontal-product--sm{% endif %} {% if background != 'rgba(0,0,0,0)' %}rounded-xs{% endif %} snap-center{%- endcapture -%}
-
+{% if product != blank %}
 <div {% render 'surface', class: class, background: background, text_color: text_color %}>
   {% if image != blank %}
     {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 54px, 80px', widths: '54,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
@@ -65,3 +46,4 @@ Supported variables
     {%- endif -%}
   </div>
 </div>
+  {% endif %}

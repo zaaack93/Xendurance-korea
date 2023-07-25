@@ -2,6 +2,7 @@
   "sections": {
     "banner": {
       "type": "collection-banner",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -11,7 +12,6 @@
         "show_collection_image": true,
         "collection_title_size": "h2",
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/XND_1.jpg",
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "featured_product": "lean",
@@ -29,7 +29,6 @@
         "template--16030540431548__9ea84bef-c27d-48e0-a75e-2a7a29bb9f8e-1683776716c5fce3ef-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8.jpg",
             "stretch_image": true,
             "link_text": "Skin",
             "link_url": "",
@@ -105,7 +104,6 @@
           "settings": {
             "position": 4,
             "column_span": "1",
-            "image": "shopify:\/\/shop_images\/Extreme_Endurance_4.jpg",
             "title": "JOIN TEAM XND & SAVE",
             "content": "",
             "link_url": "shopify:\/\/pages\/team-xnd-signup",

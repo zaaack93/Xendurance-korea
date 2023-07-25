@@ -48,14 +48,13 @@
           "type": "item",
           "settings": {
             "icon": "picto-earth",
-            "custom_icon": "shopify:\/\/shop_images\/usa_2.png",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
             "title": "American Made",
-            "content": "<p>Proudly manufactured and shipped in the USA, since 1998.<\/p>"
+            "content": "<p>Proudly manufactured in the USA, since 1998.<\/p>"
           }
         }
       },
@@ -84,7 +83,7 @@
           "type": "text",
           "settings": {
             "title": "Xendurance",
-            "content": "<p>Proudly owned, manufactured and shipped in the USA, since 1998.<\/p><p>Get in touch: <a href=\"mailto:info@xendurance.com\">info@xendurance.com<\/a><\/p>",
+            "content": "<p>Proudly owned, manufactured in the USA, since 1998.<\/p><p>Get in touch: <a href=\"mailto:info@xendurance.com\">info@xendurance.com<\/a><\/p>",
             "enable_follow_on_shop": false
           }
         },
@@ -107,7 +106,7 @@
         "6402ca96-f268-4e87-b6b4-88d9c6860ebf": {
           "type": "links",
           "settings": {
-            "menu": "policies",
+            "menu": "",
             "show_menu_title": true
           }
         }
@@ -125,7 +124,6 @@
         "show_country_flag": false,
         "show_country_name": false,
         "show_locale_selector": false,
-        "logo": "shopify:\/\/shop_images\/logo_name-white_1_2.png",
         "logo_max_width": 165,
         "logo_mobile_max_width": 145
       }

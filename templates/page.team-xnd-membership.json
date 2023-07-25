@@ -235,7 +235,7 @@
         "cfadcff4-8a13-420a-86b6-171b6ebbe2fd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_XND_3.jpg",
+            "image": "shopify:\/\/shop_images\/Team_XND_3_6aad784a-ec7c-4bef-8bf2-30071d42d204.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -263,6 +263,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -297,6 +298,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -384,6 +386,12 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "a344fbd0-845c-4189-b281-648bc053eb84": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join team XND and receive:<\/p><ul><li>Entire Site Discount<\/li><li>Get $100 in Product Rewards upon Joining<\/li><li>Free U.S Shipping. No order minimums.<\/li><li>Exclusive Partner Perks<\/li><\/ul>"
+          }
         }
       },
       "block_order": [
@@ -398,7 +406,8 @@
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-6",
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-7",
         "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-8",
-        "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-10"
+        "template--16054074540220__d9b602df-1d20-4bf3-bdc9-a5d7bca636ed-16877370366f67ab5f-10",
+        "a344fbd0-845c-4189-b281-648bc053eb84"
       ],
       "settings": {
         "full_width": true,
@@ -426,7 +435,7 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EE_Challenge_1.jpg",
+            "image": "shopify:\/\/shop_images\/Metafield_Photos_db6f4d72-2ccf-42cd-b290-9b03fdcb2b47.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -454,7 +463,7 @@
         "template--16053542715580__9e73dd0b-1f0e-4c00-8e16-2f7d9c413bac-16873262868d59cfd5-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_8797bc42-1b1c-4f3b-81f0-a705c07edba9.jpg",
+            "image": "shopify:\/\/shop_images\/2_1676033a-6b71-48da-832d-0aa18bbd4b4f.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -482,7 +491,7 @@
         "2fa3cb45-b179-4ca6-936e-32dd64424239": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/11.jpg",
+            "image": "shopify:\/\/shop_images\/1_b2c9a54e-1fd9-4ae5-b148-17a842eed79f.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -496,7 +505,7 @@
         "0c676a14-2ca9-4a69-a721-95d80367b50e": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9_89e0ddb0-ea50-4f69-b214-5eb9677c17e7.jpg",
+            "image": "shopify:\/\/shop_images\/Metafield_Photos_fce9c768-0e72-467e-9cf0-1d5c76f23c8a.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -567,7 +576,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/1-1643686487072.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
@@ -581,7 +589,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/2-1643686487074_Large_6871f92a-e3fd-4d14-acfc-7e8942840bca.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
@@ -595,7 +602,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/3-1643686487076_Large_445ce96f-663a-466c-90ea-35bd35ae836c.png",
             "mobile_icon_width": 80,
             "icon_width": 100,
             "icon_background_type": "none",
@@ -968,6 +974,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -1002,6 +1009,7 @@
       ],
       "settings": {
         "full_width": false,
+        "hide_for_members": false,
         "spacing": "small"
       }
     },
@@ -1090,7 +1098,6 @@
       "disabled": true,
       "settings": {
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "show_icon": false,
         "title": "Get The Latest From Xendurance",
         "content": "<p>Sign up for exclusive access to new releases, giveaways and workouts. <\/p>",
