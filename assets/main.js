@@ -34,7 +34,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   document.addEventListener('cart:change', function (event) {
     var cart = event.detail.cart;
     var isFound = cart === null || cart === void 0 ? void 0 : cart.items.some(function (obj) {
-      return obj.id === 40692118094012;
+      return obj.id === 45912656118059;
     });
     if (isFound) {
       var _document$querySelect, _document$querySelect2;
@@ -72,7 +72,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       var cart = event.detail.cart;
       document.querySelector('.product').classList.remove('cart-has-membership');
       cart === null || cart === void 0 ? void 0 : cart.items.forEach(function (item) {
-        if (item.id == 40692118094012) {
+        if (item.id == 45912656118059) {
           document.querySelector('.product').classList.add('cart-has-membership');
           return;
         }

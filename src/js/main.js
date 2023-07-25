@@ -23,7 +23,7 @@
 
     document.addEventListener('cart:change', function(event) {
         let cart = event.detail.cart;
-        let isFound =cart?.items.some(obj => obj.id === 40692118094012)
+        let isFound =cart?.items.some(obj => obj.id === 45912656118059)
         if(isFound){
             document.querySelector('.product')?.classList.add('cart-has-membership');
             document.querySelector('cart-drawer')?.classList.add('membership-in-cart')
@@ -56,7 +56,7 @@
             let cart = event.detail.cart;
             document.querySelector('.product').classList.remove('cart-has-membership')
             cart?.items.forEach(item => {
-            if(item.id==40692118094012){
+            if(item.id==45912656118059){
                 document.querySelector('.product').classList.add('cart-has-membership');
                 return;
             }

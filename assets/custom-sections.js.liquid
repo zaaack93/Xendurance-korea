@@ -209,7 +209,7 @@ class MainProduct extends HTMLElement {
   async render() {
     const cartContent = await fetchCart; // JSON cart content
     cartContent?.items.forEach(item => {
-      if(item.id==40692118094012){
+      if(item.id==45912656118059){
         this.querySelector('.product').classList.add('cart-has-membership')
       }
     });
@@ -464,10 +464,10 @@ class customProductForm extends ProductForm {
       // }
       // items.push({ ...item });
 
-      // items.push({id: 40692118094012, quantity:1 , selling_plan: 4565696700 });
+      // items.push({id: 45912656118059, quantity:1 , selling_plan: 4565696700 });
       // formData.set("items", JSON.stringify(items));
       const formDataMemberShip = new FormData();
-      formDataMemberShip.append('id', 40692118094012);
+      formDataMemberShip.append('id', 45912656118059);
       formDataMemberShip.append('quantity', 1);
       formDataMemberShip.append('selling_plan', 4565696700);
       await fetch(`${Shopify.routes.root}cart/add.js`, {
