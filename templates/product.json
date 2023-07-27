@@ -3,33 +3,27 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
           }
         },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "badges": {
-          "type": "badges",
+        "e00585ce-7192-4586-9567-a2c4bafdd045": {
+          "type": "price_smartrr",
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "3780c535-8911-4fe4-8d1f-605124beb58c": {
+          "type": "text",
           "settings": {
-            "show_taxes_notice": false
+            "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>"
+          }
+        },
+        "8d21c681-30df-4742-8a3a-4317b834ba98": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.product_key_benefit | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -42,47 +36,29 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "607f9e51-9129-4c62-b3f5-158106b03c22": {
           "type": "shopify:\/\/apps\/smartrr\/blocks\/app-block\/feefa72b-d730-4320-ae1b-95af6a0c861e",
           "settings": {
             "group_select": "pills",
             "group_border": 1,
-            "group_border_radius": 8,
+            "group_border_radius": 10,
             "group_primary_background": "#ffffff",
-            "group_primary_text_color": "#202223",
-            "group_border_color": "#202223",
+            "group_primary_text_color": "#1a1a1a",
+            "group_border_color": "#e93b40",
             "show_otp": true,
             "otp_default": true,
             "show_prices": true,
-            "plan_select": "dropdown",
+            "plan_select": "pills",
             "plan_border": 1,
             "plan_border_radius": 8,
-            "show_label": true,
+            "show_label": false,
             "plan_primary_background": "#ffffff",
             "plan_primary_text_color": "#202223",
             "plan_border_color": "#202223",
             "custom_css": ""
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": false,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "840f575c-a799-4dd9-b08c-8e79ffa65e58": {
+        "3cbe7afa-04db-4038-8417-654d1167e569": {
           "type": "buy_buttons_quantite",
           "settings": {
             "show_payment_button": false,
@@ -93,6 +69,17 @@
             "payment_button_text_color": ""
           }
         },
+        "ff481666-34da-4089-ad31-cb03d9ffc893": {
+          "type": "icon_with_text",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/mdi_shield-tick.png",
+            "icon_size1": 30,
+            "title1": "Money Back Guarantee",
+            "image2": "shopify:\/\/shop_images\/mdi_truck-delivery.png",
+            "icon_size2": 35,
+            "title12": "Same Day Shipping"
+          }
+        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {
@@ -100,18 +87,21 @@
         },
         "separator": {
           "type": "separator",
+          "disabled": true,
           "settings": {
           }
         },
-        "d6e7cc69-7a8b-4051-b445-8b711ed9e361": {
-          "type": "offer",
+        "cd6ba36a-48e1-40f2-a783-9541c8adc725": {
+          "type": "product_offer",
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
             "icon": "picto-coupon",
-            "icon_width": 80,
-            "title": "Become a Member & Save 25%",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
+            "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
+            "icon_width": 72,
+            "title": "Become a Member & |Save 25% OFF|",
+            "content": "<p>Purchase a Team XND Membership and receive:<\/p><ul><li> 25% Off Sitewide<\/li><li>$100 Worth of Product Rewards  <\/li><li>Free US Shipping.<\/li><li>No Order Minimums.  Exclusive Partner Perks<\/li><\/ul>",
+            "product": "team-xnd-membership",
             "background": "#353435",
             "text_color": "#ffffff"
           }
@@ -126,58 +116,38 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Key Benefits",
-            "content": "<p>Share some content to your customers about your products.<\/p>"
-          }
-        },
-        "b833a344-c331-427c-9113-de7b76a2738c": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "What's Inside",
-            "content": "<p>Share some content to your customers about your products.<\/p>"
+            "content": "<p>{{ product.metafields.custom.key_benefits | metafield_tag }}<\/p>"
           }
         },
         "ebb6b23d-4582-4ee7-b484-aa7711332c3f": {
           "type": "collapsible_text",
           "settings": {
-            "title": "When to Consume",
-            "content": "<p>Share some content to your customers about your products.<\/p>"
-          }
-        },
-        "f6277ae5-3a7d-4dea-9c23-52c21e5e270e": {
-          "type": "associated_products",
-          "settings": {
-            "title": "Buy it with",
-            "stack_products": true,
-            "products_count": 2,
-            "background": "",
-            "text_color": ""
+            "title": "Usage",
+            "content": "{{ product.metafields.custom.consumption | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "rating",
-        "badges",
-        "price",
+        "e00585ce-7192-4586-9567-a2c4bafdd045",
+        "3780c535-8911-4fe4-8d1f-605124beb58c",
+        "8d21c681-30df-4742-8a3a-4317b834ba98",
         "variant_picker",
-        "quantity_selector",
         "607f9e51-9129-4c62-b3f5-158106b03c22",
-        "buy_buttons",
-        "840f575c-a799-4dd9-b08c-8e79ffa65e58",
+        "3cbe7afa-04db-4038-8417-654d1167e569",
+        "ff481666-34da-4089-ad31-cb03d9ffc893",
         "payment_terms",
         "separator",
-        "d6e7cc69-7a8b-4051-b445-8b711ed9e361",
+        "cd6ba36a-48e1-40f2-a783-9541c8adc725",
         "description",
         "9a72e9ef-1e05-4816-9035-41a075bdf809",
         "b833a344-c331-427c-9113-de7b76a2738c",
-        "ebb6b23d-4582-4ee7-b484-aa7711332c3f",
-        "f6277ae5-3a7d-4dea-9c23-52c21e5e270e"
+        "ebb6b23d-4582-4ee7-b484-aa7711332c3f"
       ],
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,
-        "desktop_media_width": 55,
+        "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",

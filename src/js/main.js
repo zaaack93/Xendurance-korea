@@ -32,7 +32,7 @@
             document.querySelector('.product')?.classList.remove('cart-has-membership');
             document.querySelector('cart-drawer')?.classList.remove('membership-in-cart')
             // Filter objects with a specific selling plan ID
-            const sellingPlanId = 4549771452;
+            const sellingPlanId = 112490316075;
             const filteredObjects = cart?.items.filter(obj => obj.selling_plan_allocation?.selling_plan?.id === sellingPlanId);
 
             // Find all the "Remove" link buttons

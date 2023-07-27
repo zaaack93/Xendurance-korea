@@ -305,13 +305,13 @@ class PurchaseOptions extends HTMLElement {
           // code block
           content=sellingPlan.querySelector('.smartrr-pills-header');
           // Update the text content of the div
-          content.firstChild.nodeValue = 'Subscribe and Save';
+          content.firstChild.nodeValue = 'Team XND: Order once';
           //create new badge
           // Create a new element
           newElement = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newElement.textContent = '10% OFF';
+          newElement.textContent = '25% OFF';
           newElement.className = 'smartrr-badge-item';
 
           // Append the new element as a child to the div
@@ -319,7 +319,15 @@ class PurchaseOptions extends HTMLElement {
 
           //content options
           sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
-          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>"          
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>"   
+          
+          price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(Free US Shipping + Rewards)';
+          newregulralabel.className = 'data-smartrr-subscribe-price sm-max:hidden';
+          price_cotnainer.prepend(newregulralabel);
           break;
 
         case "ba11e52e1a6aa078dca92bf274d23a25dce62018":
@@ -327,7 +335,7 @@ class PurchaseOptions extends HTMLElement {
           // code block
           content=sellingPlan.querySelector('.smartrr-pills-header');
           // Update the text content of the div
-          content.firstChild.nodeValue = 'Become a Member';
+          content.firstChild.nodeValue = 'Team XND: Subscribe';
 
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
           newregulralabel = document.createElement('span');
@@ -452,7 +460,8 @@ class customProductForm extends ProductForm {
     const formData = new FormData(this);
     formData.set("sections", sectionsToBundle.join(","));
     formData.set("selling_plan",document.querySelector('.product-info input[name="selling_plan"]')?.value)
-    if(document.querySelector('.product-info input[name="selling_plan"]')?.value == 4549771452){
+    debugger
+    if(document.querySelector('.product-info input[name="selling_plan"]')?.value == 112490316075){
       // const items = [];
       // let item = {};
       // for (const [key, value] of formData.entries()) {
@@ -464,12 +473,12 @@ class customProductForm extends ProductForm {
       // }
       // items.push({ ...item });
 
-      // items.push({id: 45912656118059, quantity:1 , selling_plan: 4565696700 });
+      // items.push({id: 45912656118059, quantity:1 , selling_plan: 112489922859 });
       // formData.set("items", JSON.stringify(items));
       const formDataMemberShip = new FormData();
       formDataMemberShip.append('id', 45912656118059);
       formDataMemberShip.append('quantity', 1);
-      formDataMemberShip.append('selling_plan', 4565696700);
+      formDataMemberShip.append('selling_plan', 112489922859);
       await fetch(`${Shopify.routes.root}cart/add.js`, {
         body: formDataMemberShip,
         method: "POST",
