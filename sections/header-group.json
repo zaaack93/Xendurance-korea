@@ -32,6 +32,7 @@
       "blocks": {
         "92f1bc78-88c9-443e-ad53-895694087c85": {
           "type": "mega_menu",
+          "disabled": true,
           "settings": {
             "menu_item": "Shop All",
             "show_sub_item": false,
