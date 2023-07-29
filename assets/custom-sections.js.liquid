@@ -292,7 +292,7 @@ class PurchaseOptions extends HTMLElement {
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = ' (Free US Shipping)';
+          newregulralabel.textContent = ' (Free Shipping)';
           newregulralabel.className = 'data-smartrr-subscribe-price';
           price_cotnainer.prepend(newregulralabel);
 
@@ -320,14 +320,26 @@ class PurchaseOptions extends HTMLElement {
 
           //content options
           sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
-          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>"   
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'>Purchase a Team XND Membership and receive:</p><ul><li>25% Off Sitewide</li><li>$100 Worth of Product Rewards</li><li>Free Shipping. No Order Minimums.</li><li>Exclusive Partner Perks</li></ul></div>"  
           
           price_cotnainer=content.querySelector('div[data-smartrr-product-id]');
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = '(Free US Shipping + Rewards)';
+          newregulralabel.textContent = '(Free Shipping + Rewards)';
           newregulralabel.className = 'data-smartrr-subscribe-price sm-max:hidden';
+          price_cotnainer.prepend(newregulralabel);
+
+
+          //create new badge
+          // Create a new element
+          newElement = document.createElement('span');
+
+          newregulralabel = document.createElement('span');
+
+          // Set attributes or properties for the new element if needed
+          newregulralabel.textContent = '(+Free Shipping)';
+          newregulralabel.className = 'data-smartrr-subscribe-price sm:hidden';
           price_cotnainer.prepend(newregulralabel);
           break;
 
@@ -342,7 +354,7 @@ class PurchaseOptions extends HTMLElement {
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = '(Free US Shipping + Rewards)';
+          newregulralabel.textContent = '(Free Shipping + Rewards)';
           newregulralabel.className = 'data-smartrr-subscribe-price sm-max:hidden';
           price_cotnainer.prepend(newregulralabel);
 
@@ -370,7 +382,8 @@ class PurchaseOptions extends HTMLElement {
 
           //content options
           sellContent = sellingPlan.querySelector('div[data-smartrr-selling-plan-group-plans]');
-          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'>Purchase a Team XND Membership and receive:</p><ul><li>25% Off Sitewide</li><li>$100 Worth of Product Rewards</li><li>Free US Shipping. No Order Minimums.</li><li>Exclusive Partner Perks</li></ul></div>"  
+          sellContent.querySelector('div[data-smartrr-selling-plan-group-contents] .smartrr-pills-header').innerHTML="<div class='content_inner'><p class='label_content'><b>Delivery:</b> Every Month</p><ul><li>Cancel anytime</li><li>No lock in contract</li></ul></div>"   
+          
           break;
 
         default:
@@ -409,7 +422,7 @@ class PurchaseOptions extends HTMLElement {
           newregulralabel = document.createElement('span');
 
           // Set attributes or properties for the new element if needed
-          newregulralabel.textContent = ' (Free US Shipping)';
+          newregulralabel.textContent = ' (+Free Shipping)';
           newregulralabel.className = 'data-smartrr-subscribe-price';
           price_cotnainer.prepend(newregulralabel);
           
