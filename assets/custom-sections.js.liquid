@@ -1,3 +1,4 @@
+import {fetchCart} from "{{ 'theme.js' | asset_url }}";
 // js/sections/Hero-section-with-bubbles.js
 class BubblesContainer extends HTMLElement {
     constructor() {
@@ -196,7 +197,7 @@ class TopBarFilters extends HTMLElement {
 
 customElements.define('top-bar-filters', TopBarFilters);
 
-import {fetchCart} from "{{ 'theme.js' | asset_url }}";
+
 class MainProduct extends HTMLElement {
   constructor() {
     super();
@@ -459,9 +460,13 @@ class customProductForm extends ProductForm {
     document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
     const formData = new FormData(this);
     formData.set("sections", sectionsToBundle.join(","));
-    formData.set("selling_plan",document.querySelector('.product-info input[name="selling_plan"]')?.value)
+
+    //this check for not adding the selling plan gfor the second option behave as a order once
+    if(document.querySelector('.product-info input[name="selling_plan"]')?.value!=112481435947)
+      formData.set("selling_plan",document.querySelector('.product-info input[name="selling_plan"]')?.value)
     debugger
-    if(document.querySelector('.product-info input[name="selling_plan"]')?.value == 112490316075){
+    // add product to the cart if the seeling plan is third of second option
+    if(document.querySelector('.product-info input[name="selling_plan"]')?.value == 112490316075 || document.querySelector('.product-info input[name="selling_plan"]')?.value == 112481435947){
       // const items = [];
       // let item = {};
       // for (const [key, value] of formData.entries()) {
@@ -475,18 +480,30 @@ class customProductForm extends ProductForm {
 
       // items.push({id: 45912656118059, quantity:1 , selling_plan: 112489922859 });
       // formData.set("items", JSON.stringify(items));
-      const formDataMemberShip = new FormData();
-      formDataMemberShip.append('id', 45912656118059);
-      formDataMemberShip.append('quantity', 1);
-      formDataMemberShip.append('selling_plan', 112489922859);
-      await fetch(`${Shopify.routes.root}cart/add.js`, {
-        body: formDataMemberShip,
-        method: "POST",
-        headers: {
-          "X-Requested-With": "XMLHttpRequest"
-          // Needed for Shopify to check inventory
+      let isFound=false;
+      const cartContent = await fetchCart; // JSON cart content
+      cartContent?.items.forEach(item => {
+        if(item.id==45912656118059){
+          isFound=true;
         }
       });
+
+
+      //check the gift product isnot exist thne add it to the cart
+      if(!isFound){
+        const formDataMemberShip = new FormData();
+        formDataMemberShip.append('id', 45912656118059);
+        formDataMemberShip.append('quantity', 1);
+        formDataMemberShip.append('selling_plan', 112489922859);
+        await fetch(`${Shopify.routes.root}cart/add.js`, {
+          body: formDataMemberShip,
+          method: "POST",
+          headers: {
+            "X-Requested-With": "XMLHttpRequest"
+            // Needed for Shopify to check inventory
+          }
+        });
+      }
     }
     
     formData.set("sections_url", `${Shopify.routes.root}variants/${this.id.value}`);
