@@ -100,7 +100,7 @@
             "custom_icon": "shopify:\/\/shop_images\/TEAM_XND_Logo_100x100px.jpg",
             "icon_width": 72,
             "title": "Become a Member & |Save 25% OFF|",
-            "content": "<p>Purchase a Team XND Membership and receive:<\/p><ul><li> 25% Off Sitewide<\/li><li>$100 Worth of Product Rewards  <\/li><li>Free US Shipping.<\/li><li>No Order Minimums.  Exclusive Partner Perks<\/li><\/ul>",
+            "content": "<p>Purchase a Team XND Membership and receive:<\/p><ul><li>25% Off Sitewide<\/li><li>$100 Worth of Product Rewards  <\/li><li>Free Shipping.<\/li><li>No Order Minimums.  Exclusive Partner Perks<\/li><\/ul>",
             "product": "team-xnd-membership",
             "background": "#353435",
             "text_color": "#ffffff"

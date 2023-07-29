@@ -14,7 +14,7 @@
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "footer_collout_badge": false,
             "subheading": "Clinically proven supplements to improve endurance, energy, strength and stamina.",
-            "content": "<p>Unsure where to start? <a href=\"\/pages\/product-finder\" target=\"_blank\" title=\"Product Finder\">Take the Quiz<\/a><\/p>",
+            "content": "",
             "title": "Certified Sport and Performance Products",
             "heading_tag": "h2",
             "button_text": "Shop All Supplements",
@@ -124,56 +124,6 @@
             "bubble_color": "#f83a3a",
             "bubble_text": "Packs"
           }
-        },
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/collections\/skincare",
-            "bubble_collection_members": "shopify:\/\/collections\/skin",
-            "bubble_color": "#00a9e0",
-            "bubble_text": "All SKIN"
-          }
-        },
-        "fd2b915b-f73c-45fc-99be-44394c218002": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/products\/day-skin",
-            "bubble_collection_members": "shopify:\/\/products\/day-skin-1",
-            "bubble_color": "#00a9e0",
-            "bubble_text": "Day SKIN"
-          }
-        },
-        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/products\/night-skin",
-            "bubble_collection_members": "shopify:\/\/products\/night-skin",
-            "bubble_color": "#00a9e0",
-            "bubble_text": "Night SKIN"
-          }
-        },
-        "8c296aac-2089-4f5a-aa10-15dab5e4fbea": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/pages\/team-xnd-signup",
-            "bubble_collection_members": "shopify:\/\/pages\/team-xnd-signup",
-            "bubble_color": "#00a9e0",
-            "bubble_text": "Membership"
-          }
-        },
-        "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac": {
-          "type": "text",
-          "settings": {
-            "bubble_category": "Skin",
-            "bubble_collection": "shopify:\/\/pages\/product-finder",
-            "bubble_collection_members": "shopify:\/\/pages\/product-finder",
-            "bubble_color": "#00a9e0",
-            "bubble_text": "Quiz"
-          }
         }
       },
       "block_order": [
@@ -184,12 +134,7 @@
         "f72596b1-844a-41b3-bbdb-47ac4f9b8b8c",
         "f4122a0f-70e0-4220-adf0-3f2f634c9c85",
         "c2b11881-c704-447d-8eaa-4f0ec9f01ad8",
-        "491f5be4-58a1-4565-94f6-a805099fda8e",
-        "8f1ddcb6-bc30-491e-9266-800c6a991dda",
-        "fd2b915b-f73c-45fc-99be-44394c218002",
-        "dd8aaf1e-2224-4175-8aea-8c9c57adfd0d",
-        "8c296aac-2089-4f5a-aa10-15dab5e4fbea",
-        "e70e4c46-c0f5-421e-a2a4-ce0f1f9351ac"
+        "491f5be4-58a1-4565-94f6-a805099fda8e"
       ],
       "settings": {
         "full_width": true,
@@ -872,6 +817,7 @@
     },
     "media-grid": {
       "type": "media-grid",
+      "disabled": true,
       "blocks": {
         "item-1": {
           "type": "image",
